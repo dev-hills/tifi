@@ -2,32 +2,42 @@
 import { Image } from "astro:assets";
 import Logo from "../../public/assets/logo.svg";
 import ArrowDown from "../../public/assets/arrow-down.svg";
+import dribble from "../../public/assets/dribble.svg";
+import angellist from "../../public/assets/angel-list.svg";
+import facebook from "../../public/assets/facebook.svg";
+import linkedin from "../../public/assets/linkedin.svg";
+import github from "../../public/assets/github.svg";
+import twitter from "../../public/assets/twitter.svg";
 ---
 
-<header
-	class='font-jakarta-sans mx-12 sm:mx-20 mt-8 bg-white shadow rounded-xl'>
-	<div class='flex justify-between p-6'>
-		<Image src={Logo} width={30} height={30} alt='Logo' />
-
-		<ul class='flex pt-4'>
-			<li class='cursor-pointer'>About Us</li>
-			<li class='px-5 cursor-pointer'>Portfolio</li>
-			<li class='flex pr-5 cursor-pointer'>
-				Clients
-				<Image
-					src={ArrowDown}
-					width={20}
-					height={20}
-					alt={`Arrow-down`}
-					class='pb-1 pl-1'
-				/>
-			</li>
-			<li class='cursor-pointer'>Resources</li>
+<footer
+	class='font-noto-sans lg:px-[160px] lg:pt-16 lg:pb-12 md:px-10 md:pt-[72px] md:pb-14 pl-[15px] prr-[21px] py-16 bg-white w-full text-base leading-6 font-normal text-[#667085] md:space-y-[100px] space-y-[50px]'>
+	<div class="space-y-8">
+		<Image 
+        src={Logo}
+        width={30}
+        height={30}
+        alt="Logo"
+        />
+		<p class="md:w-[330px] w-full text-[#1D2939]">Experience the power of storytelling through the lens of creativity and innovation.</p>	
+		<ul class="flex gap-x-8 flex-wrap">
+			<li>Portfolio</li>
+			<li>Resource</li>
+			<li>For Businesses</li>
+			<li>For Individuals</li>
 		</ul>
-
-		<button
-			class='bg-[#FF601F] text-white p-3 px-6 rounded hover:transform hover:scale-105 hover:duration-700'>
-			LET'S TALK
-		</button>
 	</div>
-</header>
+	
+
+	<div class="flex justify-between flex-wrap">
+		<p>© 2077 Tifi. All rights reserved.</p>
+		<ul class="flex gap-x-6">
+			<li><Image src={twitter} width={24} height={24} alt="social media links"/></li>
+			<li><Image src={linkedin} width={24} height={24} alt="social media links"/></li>
+			<li><Image src={facebook} width={24} height={24} alt="social media links"/></li>
+			<li class="lg:block hidden"><Image src={github} width={24} height={24} alt="social media links"/></li>
+			<li class="lg:block hidden"><Image src={angellist} width={24} height={24} alt="social media links"/></li>
+			<li class="lg:block hidden"><Image src={dribble} width={24} height={24} alt="social media links"/></li>
+		</ul>
+	</div>
+</footer>
