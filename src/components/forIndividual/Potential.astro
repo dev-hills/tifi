@@ -1,20 +1,85 @@
 ---
 import { Image } from "astro:assets";
 import potentialBg from "../../../public/assets/potentialBg.svg";
+import potentialBg1 from "../../../public/assets/potentialBg1.svg";
 import letsTalk from "../../../public/assets/letsTalk.svg";
 import ptImg1 from "../../../public/assets/ptImg1.png";
+import ptImg2 from "../../../public/assets/ptImg2.png";
+import ptImg3 from "../../../public/assets/ptImg3.png";
 ---
 
-<section class='bg-[#F2F4F7] relative text-center'>
-	<div>
-		<h1>Unlock Your <span>Creative</span> Potential</h1>
-		<p>
+<section
+	class='bg-[#F2F4F7] relative text-center lg:px-40 md:px-10 px-6 lg:py-24 md:py-[72px] py-16 text-[#1D2939] font-noto-sans'>
+	<Image
+		src={potentialBg1}
+		width={474}
+		height={392}
+		alt='background svg dots'
+		class='lg:block hidden absolute bottom-0 right-0'
+	/>
+	<div class='space-y-6'>
+		<h1 class='lg:text-[64px] md:text-[48px] text-[32px] font-Red-Hat'>
+			Unlock Your <span class='text-[#FF601F]'>Creative</span> Potential
+		</h1>
+		<p class='lg:w-[74%] w-full mx-auto'>
 			Whether you're documenting your travels, sharing your daily adventures, or
 			building your personal brand, we're here to help.
 		</p>
-		<div>
-			<div>
-				<Image src={ptImg1} alt='images' />
+
+		<div
+			class='flex lg:flex-row flex-col items-center justify-center py-12 gap-[31px]'>
+			<div
+				class='flex flex-col justify-center items-center space-y-6 bg-white pb-6'>
+				<Image
+					src={ptImg1}
+					alt='images'
+					class='lg:w-[377px] lg:h-[205px] md:h-[231px] h-[205px] w-full object-cover'
+				/>
+				<div class='text-xs leading-6'>
+					<p class='text-[18px] font-bold leading-7'>
+						<span class='text-[#FF601F]'>Professional</span> Quality
+					</p>
+					<p>
+						You can achieve professional-level video content that rivals that of
+						larger productions, ensuring a high-quality end product.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class='flex flex-col justify-center items-center space-y-6 bg-white pb-6 self-start'>
+				<Image
+					src={ptImg2}
+					alt='images'
+					class='lg:w-[377px] lg:h-[205px] md:h-[231px] h-[205px] w-full object-cover'
+				/>
+				<div class='text-xs leading-6'>
+					<p class='text-[18px] font-bold leading-7'>
+						<span class='text-[#FF601F]'>Professional</span> Quality
+					</p>
+					<p>
+						Professional videos tend to engage and captivate audiences more
+						effectively, helping you connect with your viewers.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class='flex flex-col justify-center items-center space-y-6 bg-white pb-6'>
+				<Image
+					src={ptImg3}
+					alt='images'
+					class='lg:w-[377px] lg:h-[205px] md:h-[231px] h-[205px] w-full object-cover'
+				/>
+				<div class='text-xs leading-6'>
+					<p class='text-[18px] font-bold leading-7'>
+						<span class='text-[#FF601F]'>Professional</span> Quality
+					</p>
+					<p>
+						Benefit from your our support in creating videos that enhance
+						personal brand, helping you stand out in the digital landscape.
+					</p>
+				</div>
 			</div>
 		</div>
 
