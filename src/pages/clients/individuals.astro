@@ -1,10 +1,20 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import IndividualHero from "../../components/IndividualHero.astro";
+import IndividualHero from "../../components/forIndividual/IndividualHero.astro";
+import Potential from "../../components/forIndividual/Potential.astro";
+import CaseStudy from "../../components/forIndividual/CaseStudy.astro";
+import ContactForm from "../../components/forIndividual/ContactForm.astro";
+import Solutions from "../../components/forIndividual/Solutions.astro";
+import Faq from "../../components/Faq";
 ---
 
 <Layout title='Welcome to Astro.'>
 	<main class='font-noto-sans text-[#1D2939]'>
 		<IndividualHero />
+		<Potential />
+		<Solutions />
+		<CaseStudy />
+		<ContactForm />
+		<Faq />
 	</main>
 </Layout>
