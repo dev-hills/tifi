@@ -68,10 +68,13 @@ const Main = () => {
               Elevate your brand, Experience the power of storytelling through
               the lens of creativity and innovation.
             </p>
-            <button className="bg-[#FF601F] tracking-wider font-bold text-[12px] text-white p-3 px-6 rounded hover:transform hover:scale-105 hover:duration-700 flex m-auto">
+            <a href='/contact'>
+                          <button className="bg-[#FF601F] tracking-wider font-bold text-[12px] text-white p-3 px-6 rounded hover:transform hover:scale-105 hover:duration-700 flex m-auto">
               LET'S TALK
               <img src={pointerSrc} alt="Pointer" className="w-[27px] pl-2" />
             </button>
+            </a>
+
           </div>
         </div>
       </section>

@@ -37,7 +37,7 @@ const Business: React.FC = () => {
 
       <button
         type="submit"
-        className="bg-orange-500 text-white p-3 rounded-md"
+        className="bg-[#FF601F] text-white p-3 rounded-md"
       >
         Send Message
       </button>
