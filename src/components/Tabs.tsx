@@ -14,7 +14,7 @@ const Tabs: React.FC<TabsProps> = ({ activeTab, onTabChange }) => {
           onClick={() => onTabChange("Business")}
 
         >
-          Businessesss
+          Business
           {activeTab === "Business" && (
             <div className="absolute w-full h-1 bg-orange-500 bottom-0"></div>
           )}

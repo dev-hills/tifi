@@ -2,7 +2,7 @@ import React from "react";
 
 const Individual: React.FC = () => {
   return (
-    <form action="/submit" method="post" className="flex flex-col w-[40%] mx-auto mb-28">
+    <form action="/" method="post" className="flex flex-col w-[90%] md:w-[57%] lg:w-[40%]  mx-auto mb-28">
       <label className="text-gray-700 mb-2 mt-6">Full Name</label>
       <input
         type="text"
@@ -39,7 +39,7 @@ const Individual: React.FC = () => {
         type="submit"
         className="bg-orange-500 text-white p-3 rounded-md"
       >
-        Submit
+        Send Message
       </button>
     </form>
   );
