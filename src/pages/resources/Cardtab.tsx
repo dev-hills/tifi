@@ -8,8 +8,9 @@ interface TabsProps {
 const Cardtab: React.FC<TabsProps> = ({ activeTab, onTabChange }) => {
   return (
     <div className="flex lg:flex-row flex-col justify-between font-noto-sans my-8">
-      <ul className="flex items-center mb-4 border-solid border-b border-gray-300 text-res-109 md:space-x-6 space-x-0 w-full mr-5 flex-nowrap overflow-x-auto -webkit-overflow-scrolling-touch scrollbar-thin whitespace-nowrap">
-        <li
+     <ul className="flex items-center mb-4 border-solid border-b border-gray-300 text-res-109 md:space-x-6 space-x-0 w-full mr-5 flex-nowrap overflow-hidden">
+  <div className="flex items-center flex-nowrap overflow-x-auto -webkit-overflow-scrolling-touch whitespace-nowrap">
+     <li
           className={`relative p-3 cursor-pointer ${activeTab === "Business" ? "border-b-2 font-bold border-res-102 text-res-102" : "text-gray-700"}`}
           onClick={() => onTabChange("Business")}
 
@@ -37,6 +38,7 @@ const Cardtab: React.FC<TabsProps> = ({ activeTab, onTabChange }) => {
         >
           Video Marketing
         </li>
+        </div>
       </ul>
       <div className="flex items-center my-4 lg:my-0 space-x-4">
   <select data-te-select-init className="border border-res-105 lg:w-[169px] p-2 outline-none text-res-109 w-full rounded-lg">

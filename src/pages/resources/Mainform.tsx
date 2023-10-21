@@ -13,10 +13,10 @@ const Mainform: React.FC = () => {
   };
   return (
     <main className="bg-white relative py-5 font-jakarta-sans">
-      <div className="absolute">
+      <div className="absolute block md:hidden lg:block">
         <img src="/images/Vectorbg.png" alt="Background" />
       </div>
-      <div className="absolute bottom-1 end-1">
+      <div className="absolute block md:hidden lg:block bottom-1 end-1">
         <img src="/images/Vectorbg2.png" alt="Background 2" />
       </div>
 
@@ -25,8 +25,8 @@ const Mainform: React.FC = () => {
           LET'S <span className="text-res-102">CREATE</span> SOMETHING SPECIAL
           TOGETHER.
         </h1>
-        <h1 className="md:text-5xl font-bold hidden md:block lg:hidden md:leading-[65.26px] leading-[42px] text-[32px]">
-          LET'S <span className="text-res-102">KNOW</span> HOW WE CAN HELP YOU.
+        <h1 className="font-bold text-res-103 hidden md:block lg:hidden leading-[62.26px]  text-[48px]">
+          LET'S US KNOW HOW WE CAN HELP YOU.
         </h1>
         <p className="text-res-109 leading-[25.6px] py-5">
           In just 48 hours, our experts will meticulously assess your video

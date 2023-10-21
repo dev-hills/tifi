@@ -21,9 +21,11 @@ const Pagination: React.FC<PaginationProps> = ({
   }, [currentPage]);
 
   const handlePageChange = (page: number) => {
+    console.log(`handlePageChange called with page ${page}`);
     if (page >= 1 && page <= totalPages) {
       setActivePage(page);
       onPageChange(page);
+      console.log(`Page changed to ${page}`);
     }
   };
 

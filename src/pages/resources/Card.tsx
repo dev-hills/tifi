@@ -30,9 +30,9 @@ const CardSection: React.FC = () => {
         <h2 className="font-bold text-4xl text-center py-7 text-res-104">
           Featured
         </h2>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 container grid-cols-1 gap-6 mx-auto my-4">
+        <div className="grid lg:grid-cols-3  justify-center md:grid-cols-2 container px-auto  grid-cols-1 gap-6 mx-auto my-4">
         {visibleCards.map((post, index) => (
-            <div className="h-[420px] w-[376px]" key={index}>
+            <div className="h-[420px] w-[376px] mx-5" key={index}>
               <div>
                 <img
                   src="/images/Image.png"
