@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+import potentialBg from "../../../public/assets/potentialBg.svg";
+import letsTalk from "../../../public/assets/letsTalk.svg";
+import ptImg1 from "../../../public/assets/ptImg1.png";
+---
+
+<section class='bg-[#F2F4F7] relative text-center'>
+	<div>
+		<h1>Unlock Your <span>Creative</span> Potential</h1>
+		<p>
+			Whether you're documenting your travels, sharing your daily adventures, or
+			building your personal brand, we're here to help.
+		</p>
+		<div>
+			<div>
+				<Image src={ptImg1} alt='images' />
+			</div>
+		</div>
+
+		<div>
+			<p>
+				With tifi.tv, your creative vision transforms into captivating visual
+				stories.
+			</p>
+			<button>
+				<span>LET'S TALK</span>
+				<Image src={letsTalk} width={14} height={14} alt='lets talk' />
+			</button>
+		</div>
+	</div>
+	<Image
+		src={potentialBg}
+		width={474}
+		height={392}
+		alt='background svg dots'
+		class='lg:block hidden absolute top-0 left-0'
+	/>
+</section>
