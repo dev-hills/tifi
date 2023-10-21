@@ -28,11 +28,12 @@ import { useState } from "react";
 			<li class='cursor-pointer'><a href="/resources">Resources</a></li>
 		</ul>
 
-		<button
+		<a
+			href="/contact"
 			class='bg-[#FF601F] text-white py-3 px-5 rounded-lg hover:transform hover:scale-105 hover:duration-700 lg:flex hidden font-bold mr-2'>
 			LET'S TALK
-		</button>
+		</a>
 
-		<Hamburger />
+		<Hamburger client:load/>
 	</div>
 </header>
