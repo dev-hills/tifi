@@ -4,13 +4,13 @@ import { Image } from "astro:assets";
 ---
 
 <form
-	class='flex flex-col items-center gap-[24px] pt-[52px] lg:px-40 md:px-10 px-6 pb-[100px] relative'>
+	class='flex flex-col items-center gap-[24px] pt-[52px] lg:px-40 md:px-10 px-6 pb-[100px] relative w-full'>
 	<h1
-		class='text-[#101828] text-center font- text-[64px] font-bold pt-[96px] uppercase'>
+		class='text-[#101828] text-center font- lg:text-[64px] md:text-5xl text-4xl font-bold pt-[96px] uppercase'>
 		Let's us know how we can help your business
 	</h1>
 
-	<div class='flex flex-col items-start gap-[6px]'>
+	<div class='flex flex-col gap-[6px] w-full'>
 		<label
 			id='full name'
 			class='text-[#344054] font-jakarta-sans text-[14px] font-medium'
@@ -20,12 +20,12 @@ import { Image } from "astro:assets";
 			type='text'
 			name='full-name'
 			id='full-name'
-			placeholder='Enter business name'
-			class='px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[607px] rounded-[8px] outline-none'
+			placeholder='Enter full name'
+			class='px-[14px] py-[16px] border-[1px] border-[#D0D5DD] md:w-[607px] w-full rounded-[8px] outline-none'
 		/>
 	</div>
 
-	<div class='flex flex-col items-start gap-[6px]'>
+	<div class='flex flex-col gap-[6px] w-full'>
 		<label
 			id='email-address'
 			class='text-[#344054] font-jakarta-sans text-[14px] font-medium'
@@ -36,11 +36,11 @@ import { Image } from "astro:assets";
 			name='email-address'
 			id='email-address'
 			placeholder='Enter email address'
-			class='px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[607px] rounded-[8px] outline-none'
+			class='px-[14px] py-[16px] border-[1px] border-[#D0D5DD] md:w-[607px] w-full rounded-[8px] outline-none'
 		/>
 	</div>
 
-	<div class='flex flex-col items-start gap-[6px]'>
+	<div class='flex flex-col gap-[6px] w-full'>
 		<label
 			id='subject'
 			class='text-[#344054] font-jakarta-sans text-[14px] font-medium'
@@ -51,11 +51,11 @@ import { Image } from "astro:assets";
 			name='subject'
 			id='subject'
 			placeholder='Enter subject'
-			class='px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[607px] rounded-[8px] outline-none'
+			class='px-[14px] py-[16px] border-[1px] border-[#D0D5DD] md:w-[607px] w-full rounded-[8px] outline-none'
 		/>
 	</div>
 
-	<div class='flex flex-col items-start gap-[6px]'>
+	<div class='flex flex-col gap-[6px] w-full'>
 		<label class='text-[#344054] font-jakarta-sans text-[14px] font-medium'
 			>Tell us what we can do for you.</label
 		>
@@ -64,12 +64,12 @@ import { Image } from "astro:assets";
 			name=''
 			id=''
 			placeholder='Type your message...'
-			class='px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[607px] rounded-[8px] outline-none'
+			class='px-[14px] py-[16px] border-[1px] border-[#D0D5DD] md:w-[607px] w-full rounded-[8px] outline-none'
 		></textarea>
 	</div>
 
 	<button
-		class='font-inter text-white bg-[#FF601F] py-[12px] px-[20px] w-[607px] rounded-[8px]'
+		class='font-inter text-white bg-[#FF601F] py-[12px] px-[20px] md:w-[607px] w-full rounded-[8px]'
 		>SEND MESSAGE</button
 	>
 	<Image
@@ -77,13 +77,13 @@ import { Image } from "astro:assets";
 		width={474}
 		height={392}
 		alt='background svg dots'
-		class='lg:block hidden absolute bottom-0 right-0'
+		class='lg:block md:hidden block absolute bottom-0 right-0'
 	/>
 	<Image
 		src={potentialBg1}
 		width={474}
 		height={392}
 		alt='background svg dots'
-		class='lg:block hidden absolute top-0 left-0 rotate-180'
+		class='lg:block md:hidden block absolute top-0 left-0 rotate-180'
 	/>
 </form>
