@@ -52,9 +52,9 @@ const Main = () => {
 
   return (
     <main>
-      <section className="font-jakarta-sans bg-gradient-to-b mx-0 md:mx-[150px] from-white to-[#f3f4f6] rounded-b mb-20">
+      <section className="font-jakarta-sans bg-gradient-to-b mx-0 lg:mx-[160px] from-white to-[#f3f4f6] rounded-b mb-20">
         <div className="bg-[url('./public/assets/dots.svg')] bg-no-repeat bg-left-bottom">
-          <div className="bg-[url('./public/assets/collage.svg')] bg-no-repeat bg-right-bottom pb-[250px] md:pb-[180px] px-4  mt-20 text-center left-0 right-0">
+          <div className="bg-[url('./public/assets/collage.svg')] bg-no-repeat bg-right-bottom pb-[250px] md:pb-[180px] px-4 pt-[100px] text-center left-0 right-0">
             <h1 className="m-auto leading-[35px] text-[#1D2939] text-xl sm:text-3xl md:text-4xl sm:leading-10 font-extrabold">
               Crafting Visual Stories
               <br />{" "}
