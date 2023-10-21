@@ -1,20 +1,22 @@
 ---
 import {Image} from "astro:assets";
+import Hamburger from "../components/Hamburger.astro"
 import Logo from "../../public/assets/logo.svg"
 import ArrowDown from "../../public/assets/arrow-down.svg"
+import cancel from "../../public/assets/cancel.png"
+import {useState} from "react"
 ---
 
-
-<header class="font-jakarta-sans mx-12 sm:mx-20 mt-8 bg-white shadow rounded-xl">
-    <div class="flex justify-between p-6">
+<header class="font-noto-sans lg:px-[160px] px-0 lg:pt-8 pt-0 text-[#1D2939]">
+    <div class="flex justify-between lg:p-6 md:px-10 px-4 md:py-7 py-1 bg-white shadow lg:rounded-3xl rounded-none border-[#EAECF0]">
         <Image 
         src={Logo}
-        width={30}
-        height={30}
+        width={44}
+        height={20}
         alt="Logo"
         />
 
-        <ul class="flex pt-4">
+        <ul class="lg:flex pt-4 hidden">
             <li class="cursor-pointer">About Us</li>
             <li class="px-5 cursor-pointer">Portfolio</li>
             <li class="flex pr-5 cursor-pointer">
@@ -30,9 +32,11 @@ import ArrowDown from "../../public/assets/arrow-down.svg"
             <li class="cursor-pointer">Resources</li>
         </ul>
 
-            <button class="bg-[#FF601F] text-white p-3 px-6 rounded hover:transform hover:scale-105 hover:duration-700">
+            <button class="bg-[#FF601F] text-white py-3 px-5 rounded-lg hover:transform hover:scale-105 hover:duration-700 lg:flex hidden font-bold mr-2">
                 LET'S TALK
             </button>
+
+           <Hamburger/>
         
     </div>
 </header>

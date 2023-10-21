@@ -4,7 +4,8 @@ export default {
   theme: {
     fontFamily: {
       "jakarta-sans": ["Plus Jakarta Sans", 'sans-serif'],
-      "noto-sans": ['Noto Sans', 'sans-serif']
+      "noto-sans": ['Noto Sans', 'sans-serif'],
+      "Red-Hat": ['Red Hat Display', 'sans-serif']
     },
     extend: {
 			colors: {
