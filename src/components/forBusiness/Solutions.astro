@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import tick from "/public/assets/tick.svg";
+---
+
+<section class="bg-[#FCFCFD] lg:px-40 md:px-10 px-4 lg:py-24 md:py-[72px] py-16 text-center space-y-14">
+	<div>
+		<p class="text-[#FF601F] font-noto-sans md:text-[20px] text-base font-bold">WHAT WE CAN DO FOR YOU</p>
+		<h1 class='text-[#101828] text-center font- lg:text-[64px] md:text-5xl text-[32px]  font-semibold'>Custom Solutions for...</h1>
+	</div>
+
+	<div class="flex lg:flex-row flex-col gap-x-8 md:gap-y-8 gap-y-12 justify-center items-center">
+		<div class='bg-[#F2F4F7] w-fit p-8 space-y-6 rounded-2xl'>
+			<p class='lg:text-4xl md:text-3xl text-2xl font-bold text-left'>Branding  & Marketing</p>
+			<div class="space-y-2">
+				<p class="flex items-center gap-x-2"><Image src={tick} alt="tick"/> <span>Vlog Editing</span></p>
+				<p class="flex items-center gap-x-2"><Image src={tick} alt="tick"/> <span>Traveling Vlogs</span></p>
+				<p class="flex items-center gap-x-2"><Image src={tick} alt="tick"/> <span>Day-in-the-life Videos</span></p>
+				<p class="flex items-center gap-x-2"><Image src={tick} alt="tick"/> <span>Celebration Highlights</span></p>
+				<p class="flex items-center gap-x-2"><Image src={tick} alt="tick"/> <span>Family Memories</span></p>
+				<p class="flex items-center gap-x-2"><Image src={tick} alt="tick"/> <span>And many more</span></p>
+                <p>We’re here to help you. Reach out to us as soon as possible!</p>
+			</div>
+		</div>
+
+        <div class='bg-[#FF601F1A] w-fit p-8 space-y-6 rounded-2xl h-full'>
+			<p class='lg:text-4xl md:text-3xl text-2xl font-bold text-left'>Content & Personal Branding</p>
+			<div class="space-y-2">
+				<p class="flex items-center gap-x-2"><Image src={tick} alt="tick"/> <span>Online Courses and Tutorials</span></p>
+				<p class="flex items-center gap-x-2"><Image src={tick} alt="tick"/> <span>Personal Branding Videos</span></p>
+				<p class="flex items-center gap-x-2"><Image src={tick} alt="tick"/> <span>YouTube Online Content</span></p>
+				<p class="flex items-center gap-x-2"><Image src={tick} alt="tick"/> <span>Video Resumes and Portfolios</span></p>
+				<p class="flex items-center gap-x-2 pb-16"><Image src={tick} alt="tick"/> <span>And many more</span></p>
+			</div>
+		</div>
+	</div>
+</section>
