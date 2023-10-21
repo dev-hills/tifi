@@ -17,6 +17,13 @@
     "astro": "^3.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
+    "react-headroom": "^3.2.1",
+=======
+>>>>>>> main
     "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/react-headroom": "^3.2.2"
   }
 }
