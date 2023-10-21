@@ -10,17 +10,18 @@ const cardData = {
 const cards = Array(numberOfCards).fill(cardData);
 ---
 
-<section class="section" id="casestudies-section">
+<section class="section font-noto-sans" id="casestudies-section">
 
   <div class="container mx-auto  block">
     <nav class="flex lg:flex-row flex-col justify-between my-8">
-      <div class=" text-res-109 space-x-6 border-b-2 w-full mr-5 py-3">
-      <a href="#" class='text-lg  cursor-pointer' >Video Editing tips</a>
-      <a href="#" class='text-lg cursor-pointer'>Creative Storytelling</a>
-    
-      <a href="#" class='text-lg cursor-pointer' >Industry Insights</a>
-      <a href="#" class='text-lg cursor-pointer '>Video Marketing</a>
-    </div>
+      <div class="text-res-109 md:space-x-6 space-x-0 border-b-2 w-full mr-5 py-3 flex-nowrap flex overflow-x-auto -webkit-overflow-scrolling-touch scrollbar-thin whitespace-nowrap">
+        <a href="#" class="text-lg cursor-pointer py-2 px-3 ">Video Editing tips</a>
+        <a href="#" class="text-lg cursor-pointer py-2 px-3">Creative Storytelling</a>
+        <a href="#" class="text-lg cursor-pointer py-2 px-3">Industry Insights</a>
+        <a href="#" class="text-lg cursor-pointer py-2 px-3">Video Marketing</a>
+      </div>
+      
+      
 <div class="flex items-center my-4 lg:my-0 space-x-4">
   <select data-te-select-init class="border border-res-105 lg:w-[169px] p-2 w-full rounded-lg">
     <option value="1">Newest First</option>
