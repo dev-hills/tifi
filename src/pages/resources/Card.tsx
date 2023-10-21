@@ -32,7 +32,7 @@ const CardSection: React.FC = () => {
         </h2>
         <div className="grid lg:grid-cols-3  justify-center md:grid-cols-2 container px-auto  grid-cols-1 gap-6 mx-auto my-4">
         {visibleCards.map((post, index) => (
-            <div className="h-[420px] w-[376px] mx-5" key={index}>
+            <div className="h-[420px] w-[376px] mx-auto" key={index}>
               <div>
                 <img
                   src="/images/Image.png"
