@@ -1,12 +1,721 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-
+import { Image } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import ArrowUp from "/public/assets/arrow-angle-up.svg";
+import ArrowBlack from "/public/assets/arrowBlack.svg";
+import tick from "/public/assets/tick.svg";
+import overlay from "/public/assets/Overlay.svg";
+import overlay2 from "/public/assets/overlay2.svg";
+import icon from "/public/assets/caseStudyIcon.png";
+import Faq from "../../components/Faq.jsx";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>hills.dev</h1>
-	</main>
+  <main>
+    <div
+      class="px-[176px] pt-[111px] pb-[138px] bg-gradient-to-t from-[#eaebf0] to-[#EAECF0] mx-[160px] rounded-[8px] flex flex-col items-center"
+    >
+      <h1 class="font- text-[72px] font-black text-center text-[#101828]">
+        For
+        <span class="text-[#FF601F]">Businesses</span>
+      </h1>
+
+      <p
+        class="text-center text-[#1D2939] font-noto-sans text-[16px] font-normal leading-[25.6px] pt-[24px]"
+      >
+        We offer a rich palette of services designed to meet the diverse needs
+        of businesses. Whether it's unveiling a new product, igniting your
+        brand's presence, or enhancing internal communications, our video
+        editing services are tailored to your specific objectives.
+      </p>
+    </div>
+
+    <div class="bg-[#eaebf0] py-[96px] px-[160px] my-[96px]">
+      <h1 class="font- text-[#101828] text-[64px] font-semibold">
+        Our Palette of <span class="text-[#FF601F]">Corporate</span> Video
+        Services
+      </h1>
+
+      <p
+        class="text-[#344054] font-noto-sans text-[16px] font-normal text-center pt-[24px] pb-[56px]"
+      >
+        Unlocking the Power of Visual Storytelling for Your Business
+      </p>
+
+      <div class="flex flex-row items-center gap-[31px]">
+        <div class="max-w-sm rounded-[8px] bg-white">
+          <img src="/assets/business-section-1.png" class="w-full" alt="..." />
+          <div class="px-[16px] pt-[32px] pb-[24px] flex flex-col items-center">
+            <div class="font-bold text-[18px] font-noto-sans text-[#101828]">
+              Product <span class="text-[#FF601F]">Demonstrations</span>
+            </div>
+            <p
+              class="text-[#344054] text-[16px] font-normal font-noto-sans text-center leading-[25.6px] mt-[8px]"
+            >
+              Present your products in their best light with dynamic and
+              engaging demonstrations that showcase their features and benefits.
+            </p>
+          </div>
+        </div>
+
+        <div class="max-w-sm rounded-[8px] bg-white">
+          <img src="/assets/business-section-2.png" class="w-full" alt="..." />
+          <div class="px-[16px] pt-[32px] pb-[24px] flex flex-col items-center">
+            <div class="font-bold text-[18px] font-noto-sans text-[#101828]">
+              Promotional<span class="text-[#FF601F]"> Videos</span>
+            </div>
+            <p
+              class="text-[#344054] text-[16px] font-normal font-noto-sans text-center leading-[25.6px] mt-[8px]"
+            >
+              Craft compelling promotional videos that captivate your audience,
+              drive conversions, and enhance brand visibility.
+            </p>
+          </div>
+        </div>
+
+        <div class="max-w-sm rounded-[8px] bg-white">
+          <img src="/assets/business-section-3.png" class="w-full" alt="..." />
+          <div class="px-[16px] pt-[32px] pb-[24px] flex flex-col items-center">
+            <div class="font-bold text-[18px] font-noto-sans text-[#101828]">
+              Internal <span class="text-[#FF601F]">Communications</span>
+            </div>
+            <p
+              class="text-[#344054] text-[16px] font-normal font-noto-sans text-center leading-[25.6px] mt-[8px]"
+            >
+              Foster strong internal connections through effective video
+              communication, making sure your message resonates with your team.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-[245px] flex flex-col items-center gap-[32px] mt-[56px]">
+        <p
+          class="text-center text-[#344054] font-noto-sans text-[16px] font-normal leading-[25.6px]"
+        >
+          We believe that every video has a story to tell, and every story has a
+          message that connects. Our corporate video services are not just about
+          visuals; they're about creating a lasting impact on your branding and
+          marketing goals.
+        </p>
+
+        <button
+          class="py-[12px] px-[20px] bg-[#FF601F] text-white font-inter text-[16px] font-extrabold rounded-[8px] flex flex-row items-center gap-[12px]"
+          >LET'S TALK <span>
+            <Image
+              src={ArrowUp}
+              width={20}
+              height={20}
+              alt={`Arrow-down`}
+              class="pb-1 pl-1"
+            /></span
+          ></button
+        >
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <p class="text-[#FF601F] font-noto-sans text-[20px] font-bold">
+        WHAT WE CAN DO FOR YOU
+      </p>
+
+      <h1 class="text-[#101828] text-center font- text-[64px] font-semibold">
+        Custom Solutions for...
+      </h1>
+
+      <div class="flex flex-row gap-[32px] items-center mt-[56px] mb-[96px]">
+        <div
+          class="p-[32px] bg-[#eaebf0] flex flex-col items-start min-h-[400px] rounded-[16px] min-w-[500px]"
+        >
+          <h1
+            class="text-[#101828]
+          font-noto-sans
+          text-[36px]
+          font-bold"
+          >
+            Branding & Marketing
+          </h1>
+
+          <div class="flex flex-col items-start gap-[8px] mt-[24px] mb-[32px]">
+            <p
+              class="flex flex-row items-end gap-[8px] text-[#1D2939] font-noto-sans text-[16px] font-normal"
+            >
+              <span>
+                <Image
+                  src={tick}
+                  width={20}
+                  height={20}
+                  alt={`Arrow-down`}
+                  class="pb-1 pl-1"
+                /></span
+              >
+               Brand Identity Videos
+            </p>
+
+            <p
+              class="flex flex-row items-end gap-[8px] text-[#1D2939] font-noto-sans text-[16px] font-normal"
+            >
+              <span>
+                <Image
+                  src={tick}
+                  width={20}
+                  height={20}
+                  alt={`Arrow-down`}
+                  class="pb-1 pl-1"
+                /></span
+              >
+               Product and Service Promotion
+            </p>
+
+            <p
+              class="flex flex-row items-end gap-[8px] text-[#1D2939] font-noto-sans text-[16px] font-normal"
+            >
+              <span>
+                <Image
+                  src={tick}
+                  width={20}
+                  height={20}
+                  alt={`Arrow-down`}
+                  class="pb-1 pl-1"
+                /></span
+              >
+               Event Videos
+            </p>
+
+            <p
+              class="flex flex-row items-end gap-[8px] text-[#1D2939] font-noto-sans text-[16px] font-normal"
+            >
+              <span>
+                <Image
+                  src={tick}
+                  width={20}
+                  height={20}
+                  alt={`Arrow-down`}
+                  class="pb-1 pl-1"
+                /></span
+              >
+               Recruitment and HR Videos
+            </p>
+
+            <p
+              class="flex flex-row items-end gap-[8px] text-[#1D2939] font-noto-sans text-[16px] font-normal"
+            >
+              <span>
+                <Image
+                  src={tick}
+                  width={20}
+                  height={20}
+                  alt={`Arrow-down`}
+                  class="pb-1 pl-1"
+                /></span
+              >
+               Training and Educational Videos
+            </p>
+
+            <p
+              class="flex flex-row items-end gap-[8px] text-[#1D2939] font-noto-sans text-[16px] font-normal"
+            >
+              <span>
+                <Image
+                  src={tick}
+                  width={20}
+                  height={20}
+                  alt={`Arrow-down`}
+                  class="pb-1 pl-1"
+                /></span
+              >
+               And many more
+            </p>
+          </div>
+
+          <p
+            class="text-[#1D2939] font-noto-sans text-[16px] font-normal text-center"
+          >
+            We're here to help you. Reach out to us as soon as possible!
+          </p>
+        </div>
+
+        <div
+          class="p-[32px] bg-[#FCEDE7] flex flex-col items-start min-h-[400px] rounded-[16px] min-w-[500px]"
+        >
+          <h1
+            class="text-[#101828]
+        font-noto-sans
+        text-[36px]
+        font-bold"
+          >
+            Digital Marketing
+          </h1>
+
+          <div class="flex flex-col items-start gap-[8px] mt-[24px] mb-[32px]">
+            <p
+              class="flex flex-row items-end gap-[8px] text-[#1D2939] font-noto-sans text-[16px] font-normal"
+            >
+              <span>
+                <Image
+                  src={tick}
+                  width={20}
+                  height={20}
+                  alt={`Arrow-down`}
+                  class="pb-1 pl-1"
+                /></span
+              >
+               Social Media Videos
+            </p>
+
+            <p
+              class="flex flex-row items-end gap-[8px] text-[#1D2939] font-noto-sans text-[16px] font-normal"
+            >
+              <span>
+                <Image
+                  src={tick}
+                  width={20}
+                  height={20}
+                  alt={`Arrow-down`}
+                  class="pb-1 pl-1"
+                /></span
+              >
+               Ad Campaign Videos
+            </p>
+
+            <p
+              class="flex flex-row items-end gap-[8px] text-[#1D2939] font-noto-sans text-[16px] font-normal"
+            >
+              <span>
+                <Image
+                  src={tick}
+                  width={20}
+                  height={20}
+                  alt={`Arrow-down`}
+                  class="pb-1 pl-1"
+                /></span
+              >
+               Content Marketing Videos
+            </p>
+
+            <p
+              class="flex flex-row items-end gap-[8px] text-[#1D2939] font-noto-sans text-[16px] font-normal"
+            >
+              <span>
+                <Image
+                  src={tick}
+                  width={20}
+                  height={20}
+                  alt={`Arrow-down`}
+                  class="pb-1 pl-1"
+                /></span
+              >
+               Email Marketing Videos
+            </p>
+
+            <p
+              class="flex flex-row items-end gap-[8px] text-[#1D2939] font-noto-sans text-[16px] font-normal"
+            >
+              <span>
+                <Image
+                  src={tick}
+                  width={20}
+                  height={20}
+                  alt={`Arrow-down`}
+                  class="pb-1 pl-1"
+                /></span
+              >
+               YouTube and Online Video Content
+            </p>
+
+            <p
+              class="flex flex-row items-end gap-[8px] text-[#1D2939] font-noto-sans text-[16px] font-normal"
+            >
+              <span>
+                <Image
+                  src={tick}
+                  width={20}
+                  height={20}
+                  alt={`Arrow-down`}
+                  class="pb-1 pl-1"
+                /></span
+              >
+               And many more
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="">
+      <div class="absolute -z-10">
+        <Image src={overlay} alt="overlay" width={474} />
+      </div>
+
+      <div class="px-[160px]">
+        <h1 class="text-[#101828] text-center font- text-[64px] font-semibold">
+          Our Impact on Businesses
+        </h1>
+
+        <p
+          class="text-[#344054] text-center font-noto-sans text-[16px] font-normal mt-[24px] mb-[66px]"
+        >
+          Stories of transformation, engagement, and success.
+        </p>
+
+        <div
+          class="px-[100px] py-[24px] flex flex-row items-center justify-between bg-[#eaebf0] rounded-[24px]"
+        >
+          <div class="flex flex-col items-center gap-[8px]">
+            <h1 class="text-[#101828] text-center font- text-[64px] font-bold">
+              3000<span class="text-[#FF601F]">+</span>
+            </h1>
+            <p class="text-[#344054] text-center font-noto-sans text-[18px]">
+              Businesses empowered
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center gap-[8px]">
+            <h1 class="text-[#101828] text-center font- text-[64px] font-bold">
+              50<span class="text-[#FF601F]">%</span>
+            </h1>
+            <p class="text-[#344054] text-center font-noto-sans text-[18px]">
+              growth in online engagement
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center gap-[8px]">
+            <h1 class="text-[#101828] text-center font- text-[64px] font-bold">
+              100m<span class="text-[#FF601F]">+</span>
+            </h1>
+            <p class="text-[#344054] text-center font-noto-sans text-[18px]">
+              Total Views
+            </p>
+          </div>
+        </div>
+
+        <p
+          class="px-[204px] text-[#344054] text-center font-noto-sans text-[16px] font-normal leading-[25.6px] pt-[48px] pb-[96px]"
+        >
+          These figures reflect the tangible results we deliver to businesses
+          across diverse sectors. Our video editing and storytelling expertise
+          drive growth and success
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-[#eaebf0] py-[96px] px-[160px]">
+      <h1 class="text-[#101828] text-center font- text-[64px] font-semibold">
+        Case <span class="text-[#FF601F]">Studies</span>
+      </h1>
+
+      <p
+        class="text-[#344054] font-noto-sans text-[16px] font-normal text-center pt-[24px] pb-[48px]"
+      >
+        Stories of transformation, engagement, and success.
+      </p>
+
+      <div class="grid grid-cols-3 gap-[36px]">
+        <div class="p-[30px] bg-white flex flex-col items-start rounded-[8px]">
+          <Image src={icon} alt="icon" width={64} />
+
+          <h1
+            class="text-[#1D2939] font-noto-sans text-[24px] font-bold pt-[16px] pb-[24px]"
+          >
+            Wanderlust Chronicles
+          </h1>
+
+          <p
+            class="text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
+          >
+            The project garnered over 1 million views and sparked a 20% increase
+            in travel bookings for our client
+          </p>
+
+          <button
+            class="py-[12px] px-[20px] text-black font-inter border-[1px] border-[#D0D5DD] text-[16px] font-extrabold rounded-[8px] flex flex-row items-end gap-[12px]"
+            >LEARN MORE <span>
+              <Image
+                src={ArrowBlack}
+                width={20}
+                height={20}
+                alt={`Arrow-down`}
+                class="pb-1 pl-1"
+              /></span
+            ></button
+          >
+        </div>
+
+        <div class="p-[30px] bg-white flex flex-col items-start rounded-[8px]">
+          <Image src={icon} alt="icon" width={64} />
+
+          <h1
+            class="text-[#1D2939] font-noto-sans text-[24px] font-bold pt-[16px] pb-[24px]"
+          >
+            Wanderlust Chronicles
+          </h1>
+
+          <p
+            class="text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
+          >
+            The project garnered over 1 million views and sparked a 20% increase
+            in travel bookings for our client
+          </p>
+
+          <button
+            class="py-[12px] px-[20px] text-black font-inter border-[1px] border-[#D0D5DD] text-[16px] font-extrabold rounded-[8px] flex flex-row items-end gap-[12px]"
+            >LEARN MORE <span>
+              <Image
+                src={ArrowBlack}
+                width={20}
+                height={20}
+                alt={`Arrow-down`}
+                class="pb-1 pl-1"
+              /></span
+            ></button
+          >
+        </div>
+
+        <div class="p-[30px] bg-white flex flex-col items-start rounded-[8px]">
+          <Image src={icon} alt="icon" width={64} />
+
+          <h1
+            class="text-[#1D2939] font-noto-sans text-[24px] font-bold pt-[16px] pb-[24px]"
+          >
+            Wanderlust Chronicles
+          </h1>
+
+          <p
+            class="text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
+          >
+            The project garnered over 1 million views and sparked a 20% increase
+            in travel bookings for our client
+          </p>
+
+          <button
+            class="py-[12px] px-[20px] text-black font-inter border-[1px] border-[#D0D5DD] text-[16px] font-extrabold rounded-[8px] flex flex-row items-end gap-[12px]"
+            >LEARN MORE <span>
+              <Image
+                src={ArrowBlack}
+                width={20}
+                height={20}
+                alt={`Arrow-down`}
+                class="pb-1 pl-1"
+              /></span
+            ></button
+          >
+        </div>
+
+        <div class="p-[30px] bg-white flex flex-col items-start rounded-[8px]">
+          <Image src={icon} alt="icon" width={64} />
+
+          <h1
+            class="text-[#1D2939] font-noto-sans text-[24px] font-bold pt-[16px] pb-[24px]"
+          >
+            Wanderlust Chronicles
+          </h1>
+
+          <p
+            class="text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
+          >
+            The project garnered over 1 million views and sparked a 20% increase
+            in travel bookings for our client
+          </p>
+
+          <button
+            class="py-[12px] px-[20px] text-black font-inter border-[1px] border-[#D0D5DD] text-[16px] font-extrabold rounded-[8px] flex flex-row items-end gap-[12px]"
+            >LEARN MORE <span>
+              <Image
+                src={ArrowBlack}
+                width={20}
+                height={20}
+                alt={`Arrow-down`}
+                class="pb-1 pl-1"
+              /></span
+            ></button
+          >
+        </div>
+
+        <div class="p-[30px] bg-white flex flex-col items-start rounded-[8px]">
+          <Image src={icon} alt="icon" width={64} />
+
+          <h1
+            class="text-[#1D2939] font-noto-sans text-[24px] font-bold pt-[16px] pb-[24px]"
+          >
+            Wanderlust Chronicles
+          </h1>
+
+          <p
+            class="text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
+          >
+            The project garnered over 1 million views and sparked a 20% increase
+            in travel bookings for our client
+          </p>
+
+          <button
+            class="py-[12px] px-[20px] text-black font-inter border-[1px] border-[#D0D5DD] text-[16px] font-extrabold rounded-[8px] flex flex-row items-end gap-[12px]"
+            >LEARN MORE <span>
+              <Image
+                src={ArrowBlack}
+                width={20}
+                height={20}
+                alt={`Arrow-down`}
+                class="pb-1 pl-1"
+              /></span
+            ></button
+          >
+        </div>
+
+        <div class="p-[30px] bg-white flex flex-col items-start rounded-[8px]">
+          <Image src={icon} alt="icon" width={64} />
+
+          <h1
+            class="text-[#1D2939] font-noto-sans text-[24px] font-bold pt-[16px] pb-[24px]"
+          >
+            Wanderlust Chronicles
+          </h1>
+
+          <p
+            class="text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
+          >
+            The project garnered over 1 million views and sparked a 20% increase
+            in travel bookings for our client
+          </p>
+
+          <button
+            class="py-[12px] px-[20px] text-black font-inter border-[1px] border-[#D0D5DD] text-[16px] font-extrabold rounded-[8px] flex flex-row items-end gap-[12px]"
+            >LEARN MORE <span>
+              <Image
+                src={ArrowBlack}
+                width={20}
+                height={20}
+                alt={`Arrow-down`}
+                class="pb-1 pl-1"
+              /></span
+            ></button
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-[#585E69] py-[96px] px-[160px] flex flex-col items-start justify-center"
+    >
+      <h1
+        class="text-white font- text-[64px] font-bold text-start max-w-[800px]"
+      >
+        Elevating Your Brand's Identity
+      </h1>
+
+      <p
+        class="text-white font-noto-sans text-[20px] font-medium text-start max-w-[800px] leading-[32px] pt-[24px] pb-[64px]"
+      >
+        Your brand's identity is at the core of your business, and it's our
+        privilege to enhance it through video storytelling. We believe that
+        video is the medium that connects brands to their audience, and we're
+        here to craft your unique narrative.
+      </p>
+
+      <div class="flex flex-row items-center gap-[109px]">
+        <div class="w-[464px] h-[250px] bg-[#6C727B]"></div>
+
+        <p
+          class="font-noto-sans text-[20px] font-medium leading-[32px] text-start text-white max-w-[619px]"
+        >
+          Our expertise in video storytelling goes beyond the visual. It's about
+          weaving a narrative that speaks directly to your audience, creating a
+          connection that goes beyond words. With tifi.tv, your branding and
+          marketing efforts are not just campaigns; they're stories waiting to
+          be told.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="border-[1px] border-black border-t-0 border-l-0 border-r-0 pb-[95px]"
+    >
+      <div class="absolute -z-10">
+        <Image src={overlay2} alt="overlay" />
+      </div>
+
+      <div class="absolute right-0 mt-[600px]">
+        <Image src={overlay2} alt="overlay" />
+      </div>
+
+      <h1
+        class="text-[#101828] text-center font- text-[64px] font-bold pt-[96px]"
+      >
+        Let's Create Something Together
+      </h1>
+
+      <p
+        class="max-w-[702px] font-noto-sans text-[16px] font-normal text-[#344054] leading-[25.6px] text-center mx-auto pt-[24px]"
+      >
+        It's time to turn your vision into reality. The possibilities are
+        endless when it comes to visual storytelling. If you're ready to embark
+        on a project that can transform your business, we're here to make it
+        happen.
+      </p>
+
+      <form class="flex flex-col items-center gap-[24px] pt-[52px]">
+        <div class="flex flex-col items-start gap-[6px]">
+          <label
+            class="text-[#344054] font-jakarta-sans text-[14px] font-medium"
+            >Company Name</label
+          >
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter business name"
+            class="px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[607px] rounded-[8px] outline-none"
+          />
+        </div>
+
+        <div class="flex flex-col items-start gap-[6px]">
+          <label
+            class="text-[#344054] font-jakarta-sans text-[14px] font-medium"
+            >Email Address</label
+          >
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Enter email address"
+            class="px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[607px] rounded-[8px] outline-none"
+          />
+        </div>
+
+        <div class="flex flex-col items-start gap-[6px]">
+          <label
+            class="text-[#344054] font-jakarta-sans text-[14px] font-medium"
+            >Subject(Optional)</label
+          >
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter subject"
+            class="px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[607px] rounded-[8px] outline-none"
+          />
+        </div>
+
+        <div class="flex flex-col items-start gap-[6px]">
+          <label
+            class="text-[#344054] font-jakarta-sans text-[14px] font-medium"
+            >Tell us what we can do for you.</label
+          >
+          <textarea
+            rows="3"
+            name=""
+            id=""
+            placeholder="Type your message..."
+            class="px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[607px] rounded-[8px] outline-none"
+          ></textarea>
+        </div>
+
+        <button
+          class="font-inter text-white bg-[#FF601F] py-[12px] px-[20px] w-[607px] rounded-[8px]"
+          >SEND MESSAGE</button
+        >
+      </form>
+    </div>
+
+    <Faq client:only />
+  </main>
 </Layout>
-
-
