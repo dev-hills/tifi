@@ -12,8 +12,8 @@ const cards = Array(numberOfCards).fill(cardData);
 
 <section class="section" id="casestudies-section">
 
-  <div class="container mx-auto hidden lg:block">
-    <nav class="flex justify-between my-8">
+  <div class="container mx-auto  block">
+    <nav class="flex lg:flex-row flex-col justify-between my-8">
       <div class=" text-res-109 space-x-6 border-b-2 w-full mr-5 py-3">
       <a href="#" class='text-lg  cursor-pointer' >Video Editing tips</a>
       <a href="#" class='text-lg cursor-pointer'>Creative Storytelling</a>
@@ -22,7 +22,7 @@ const cards = Array(numberOfCards).fill(cardData);
       <a href="#" class='text-lg cursor-pointer '>Video Marketing</a>
     </div>
 <div class="flex items-center  space-x-4">
-  <select data-te-select-init class="border border-res-105 w-[169px] p-2  rounded-lg">
+  <select data-te-select-init class="border border-res-105 lg:w-[169px] p-2 w-full rounded-lg">
     <option value="1">Newest First</option>
     <option value="2">Two</option>
     <option value="3">Three</option>
@@ -30,7 +30,7 @@ const cards = Array(numberOfCards).fill(cardData);
     <option value="5">Five</option>
     
   </select>
-  <select data-te-select-init class="border border-res-105 w-[169px] p-2  rounded-lg">
+  <select data-te-select-init class="border border-res-105 lg:w-[169px] p-2 w-full rounded-lg">
     <option value="1">Videos</option>
     <option value="2">Two</option>
     <option value="3">Three</option>
@@ -42,7 +42,7 @@ const cards = Array(numberOfCards).fill(cardData);
     </nav>
     <h2 class="font-bold text-4xl text-center py-7 text-res-104">Featured</h2>
     
-    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 my-4">
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 container grid-cols-1 gap-6 mx-auto  my-4">
       {cards.map((post, index) => (
         <div class="h-[420px] w-[376px]">
           <div>
