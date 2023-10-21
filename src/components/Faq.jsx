@@ -52,12 +52,12 @@ const Faq = () => {
   };
 
   return (
-    <div className="px-[160px] py-[96px]">
+    <div className="lg:px-[160px] md:px-10 px-6 py-[96px]">
       <h1 className="text-center text-[#1D2939] font-Red-Hat text-[64px] font-semibold pb-[48px]">
         FAQ
       </h1>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-2 grid-col-1 gap-4">
         {menus.map((menu, index) => (
           <div key={index} className="p-[24px] rounded-[8px] bg-[#F2F4F7]">
             <div className="flex flex-row items-center justify-between">
