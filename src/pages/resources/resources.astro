@@ -1,12 +1,18 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Header from './Header.astro'
+import Brands from './Brands.astro';
+import Header from './Header.astro';
+import Form from './Form.astro';
+import Card from './Card.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="w-full container m-auto flex flex-col content-center justify-between">
+	<main class="w-full m-auto flex flex-col content-center justify-center">
 		<Header />
-		<h1>ORJI_ONYINYECHI</h1>
+		<Card />
+		<Brands />
+		<Form />
+		
 	</main>
 </Layout>
 
