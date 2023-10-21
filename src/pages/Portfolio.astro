@@ -1,11 +1,65 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
+import VideoCard from  '../components/VideoCard.astro'
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1>@Khemmie-Ray</h1>
+			<div class="bg-gradient-to-b from-transparent to-[#EAECF0] w-[90%] mx-auto h-[40vh] flex items-center justify-center flex-col rounded-b-xl text-center">
+				<h1 class="text-[72px] mt-0"><span class="text-[#FF601F]">Featured</span>  Works</h1>
+				<p class="text-[16px] w-[60%]">We don't just edit videos; we choreograph stories that resonate, inspire, and leave a lasting impression. Browse through our award-winning work and find concepts that move you.</p>
+			</div>
+			<section class="bg-[#101828] bg-opacity-[17%] mt-8 py-16">
+				<h2 class="text-[64px] text-center text-[#1D2939]">Carefully Picked Videos</h2>
+				<div class="text-center pb-4">
+				  <button class="mr-8 hover:border-b-2 border-[#FF601F] focus:border-b-2">Business</button>
+				  <button class="mr-8 hover:border-b-2 focus:border-b-2 border-[#FF601F]">Individual</button>
+				  <select name="" id="">
+					<option value="short film">Short Film</option>
+				</select>
+				</div>
+			<VideoCard />
+			</section>
+			<div class="top-tab pt-12">
+			  <h2 class="text-[72px] mb-6 text-center w-full px-4 lg:w-[60%] mx-auto">Let us know how we can help you.</h2>
+			  <div class="text-center pb-4">
+				<button class="mr-8 hover:border-b-2 border-[#FF601F] focus:border-b-2">Business</button>
+				<button class="mr-8 hover:border-b-2 focus:border-b-2 border-[#FF601F]">Individual</button>
+			  </div>
+			
+			</div>
+			<section class="form-wrapper border-b border-t">
+				<form class="flex flex-col lg:w-[40%] w-[100%] p-4 mx-auto py-16">
+				  <label htmlFor="" class="mb-6">Company Name
+					<input type="text" placeholder='Enter business name' class="block border rounded-[8px] p-2 w-[100%] mt-2"/></label>
+					<label htmlFor="" class="mb-6">Email Address
+					<input type="text" placeholder='Enter email address' class="block border rounded-[8px] p-2 w-[100%] mt-2" /></label>
+					<label htmlFor="" class="mb-6">Subject (optional)
+					<input type="text" placeholder='Enter subject' class="block border rounded-[8px] p-2 w-[100%] mt-2"/></label>
+					<label htmlFor="" class="mb-6">Tell us what we can do for you <textarea name="" id="" cols="30" rows="10" placeholder='Type your message' class="block border rounded-[8px] p-2 w-[100%] mt-2"/></label>
+					<button class="bg-[#FF601F] text-white rounded-[8px] p-2 uppercase">Send Message</button>
+				</form>
+			</section>
+			<section class="mt-8">
+			  <h2>FAQ</h2>
+			</section>
+			</main>
+			
+			<style>
+			  .form-wrapper {
+				background-image: url('../image/bg.svg');
+				background-size: auto, 50%;
+				background-position: bottom right;
+				background-repeat: no-repeat;
+			  }
+			
+			  .top-tab {
+				background-image: url('../image/bg.svg');
+				background-size: auto, 5%;
+				background-position: top left;
+				background-repeat: no-repeat;
+			  }
+			  </style>
 	</main>
 </Layout>
 
