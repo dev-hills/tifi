@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.wetext{
+font-family: 'Red Hat Display', sans-serif;
+/* color: rgba(255, 255, 255, 1); */
+  text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.21), 
+               2px -2px 0px rgba(255, 255, 255, 0.21), 
+			   -2px 2px 0px rgba(255, 255, 255, 0.21), 
+			   -2px -2px 0px rgba(255, 255, 255, 0.21), 
+			   2px 0px 0px rgba(255, 255, 255, 0.21), 
+			   0px 2px 0px rgba(255, 255, 255, 0.21), 
+			   -2px 0px 0px rgba(255, 255, 255, 0.21), 
+			   0px -2px 0px rgba(255, 255, 255, 0.21);
+font-style: normal;
+font-weight: 800;
+line-height: 160%; /* 10rem */
+text-transform: uppercase;   
+}

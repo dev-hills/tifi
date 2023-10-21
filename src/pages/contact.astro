@@ -1,11 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Contact from '../components/Contact.tsx';
 
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1>Chixoba</h1>
+				<Contact client:load />
+				
+
 	</main>
 </Layout>
 
