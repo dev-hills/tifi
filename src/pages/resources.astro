@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Brands from './resources/Brands.astro';
+import Header from './resources/Header.astro';
+import Mainform from './resources/Mainform.tsx';
+import Cardnav from './resources/Cardnav.tsx'
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="w-full m-auto flex flex-col content-center justify-center">
+		<Header />
+		<Cardnav client:load  />
+		<Brands />
+		<Mainform client:load />
+	</main>
+</Layout>
+
+
