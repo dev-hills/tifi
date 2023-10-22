@@ -25,3 +25,12 @@ font-weight: 800;
 line-height: 160%; /* 10rem */
 text-transform: uppercase;   
 }
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
