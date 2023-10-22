@@ -23,7 +23,7 @@ interface ContactProps {
        GET IN  TOUCH
        {/* {title} */}
       </h1>
-      <div className="mx-auto w-5/12 text-344054 text-sm text-center mb-12">
+      <div className="mx-auto  text-344054 text-sm text-center mb-12 w-[90%] md:w-[57%] lg:w-[40%]">
     In just 48 hours, our experts will meticulously assess your video content and reveal untapped opportunities for enhancing your brand and visual storytelling.
     {/* {description} */}
       </div>

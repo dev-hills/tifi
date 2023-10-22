@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import Pagination from "./Pagination";
+import PaginationBar from "./pagination/Paginatebar";
+
 
 const numberOfCards = 40;
-
+const itemsPerPage = 6;
 const cardData = {
   name: "Video Editing",
   title: "Time lapse and Mapping",
@@ -13,17 +14,17 @@ const cardData = {
 const cards = Array(numberOfCards).fill(cardData);
 
 const CardSection: React.FC = () => {
-  const itemsPerPage = 6; // Set the number of cards per page
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(2);
   const totalItems = cards.length;
 
-  const onPageChange = (page:any) => {
+  const onPageChange = (page: number) => {
     setCurrentPage(page);
   };
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const visibleCards = cards.slice(startIndex, endIndex);
+
   return (
     <section className="section font-noto-sans" id="casestudies-section">
       <div className="container mx-auto block">
@@ -56,12 +57,11 @@ const CardSection: React.FC = () => {
           ))}
         </div>
       </div>
-      <Pagination
-      currentPage={currentPage}
-          itemsPerPage={itemsPerPage}
-          totalItems={totalItems}
-          onPageChange={onPageChange}
-        />
+      <PaginationBar
+        pageLength={Math.ceil(totalItems / itemsPerPage)}
+        currentPage={currentPage}
+        changeCurrentPage={onPageChange}
+      />
     </section>
   );
 };
