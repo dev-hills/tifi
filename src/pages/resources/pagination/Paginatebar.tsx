@@ -37,7 +37,7 @@ const PaginationBar: React.FC<PaginationBarProps> = ({
           <li
             key={paginate}
             className={`${
-              paginate === currentPage + 1 ? 'text-res-102 bg-res-105 rounded-full ' : 'bg-white text-res-106'
+              paginate === currentPage + 1 ? 'text-res-102 bg-res-105 rounded-full ' : ' text-res-106'
             } px-[14px] py-2 rounded-lg flex place-items-center cursor-pointer`}
             onClick={() => {
               changeCurrentPage(paginate - 1);
