@@ -1,16 +1,15 @@
 import React from "react";
-
+import './Resource.css'
 interface TabsProps {
   activeTab: string;
   onTabChange: (tab: string) => void;
 }
-
 const Cardtab: React.FC<TabsProps> = ({ activeTab, onTabChange }) => {
   return (
     <div className="flex lg:flex-row flex-col justify-between font-noto-sans my-8">
-     <ul className="flex items-center mb-4 border-solid border-b border-gray-300 text-res-109 md:space-x-6 space-x-0 w-full mr-5 flex-nowrap overflow-hidden">
-  <div className="flex items-center flex-nowrap overflow-x-auto -webkit-overflow-scrolling-touch whitespace-nowrap">
-     <li
+   <ul className="flex items-center mb-4 border-solid border-b no-scrollbar border-gray-300 text-res-109 md:space-x-6 space-x-0 w-full mr-5 flex-nowrap overflow-x-auto -webkit-overflow-scrolling-touch scrollbar-hide whitespace-nowrap">
+  <div className="flex items-center flex-nowrap overflow-x-auto no-scrollbar -webkit-overflow-scrolling-touch">
+   <li
           className={`relative p-3 cursor-pointer ${activeTab === "Business" ? "border-b-2 font-bold border-res-102 text-res-102" : "text-gray-700"}`}
           onClick={() => onTabChange("Business")}
 
@@ -40,7 +39,7 @@ const Cardtab: React.FC<TabsProps> = ({ activeTab, onTabChange }) => {
         </li>
         </div>
       </ul>
-      <div className="flex items-center my-4 lg:my-0 space-x-4">
+      <div className="flex items-center my-4 lg:my-0  mx-3 space-x-4">
   <select data-te-select-init className="border border-res-105 lg:w-[169px] p-2 outline-none text-res-109 w-full rounded-lg">
     <option value="1">Newest First</option>
     <option value="2">Two</option>
