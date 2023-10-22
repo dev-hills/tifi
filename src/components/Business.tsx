@@ -20,7 +20,7 @@ const Business: React.FC = () => {
 
       />
 
-      <label className="text-gray-700 mb-2">Subject</label>
+      <label className="text-gray-700 mb-2">Subject(optional)</label>
       <input
         type="text"
         name="subject"
@@ -28,10 +28,10 @@ const Business: React.FC = () => {
         className="mb-4 p-3 rounded-md border border-[#D0D5DD] focus:outline-none focus:border-orange-500"
       />
 
-      <label className="text-gray-700 mb-2">Comment</label>
+      <label className="text-gray-700 mb-2">Tell us what we can do for you</label>
       <textarea
         name="comment"
-        placeholder="Comment"
+        placeholder="Type a message"
         className="mb-4 p-3 rounded-md border border-[#D0D5DD]focus:outline-none focus-border-orange-500"
       />
 
