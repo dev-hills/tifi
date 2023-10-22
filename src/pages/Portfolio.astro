@@ -1,16 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import VideoCard from  '../components/VideoCard.astro'
+import Faq from '../components/Faq'
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-			<div class="bg-gradient-to-b from-transparent to-[#EAECF0] w-[90%] mx-auto h-[40vh] flex items-center justify-center flex-col rounded-b-xl text-center">
-				<h1 class="text-[72px] mt-0"><span class="text-[#FF601F]">Featured</span>  Works</h1>
-				<p class="text-[16px] w-[60%]">We don't just edit videos; we choreograph stories that resonate, inspire, and leave a lasting impression. Browse through our award-winning work and find concepts that move you.</p>
+			<div class="bg-gradient-to-b from-transparent to-[#EAECF0] lg:w-[90%] w-[100%] mx-auto h-[40vh] flex items-center justify-center flex-col rounded-b-xl text-center font-red-hat p-4">
+				<h1 class="lg:text-[72px] text-[32px] mt-0 font-bold my-2"><span class="text-[#FF601F]">Featured</span>  Works</h1>
+				<p class="text-[16px] w-[100%] lg:w-[60%]">We don't just edit videos; we choreograph stories that resonate, inspire, and leave a lasting impression. Browse through our award-winning work and find concepts that move you.</p>
 			</div>
 			<section class="bg-[#101828] bg-opacity-[17%] mt-8 py-16">
-				<h2 class="text-[64px] text-center text-[#1D2939]">Carefully Picked Videos</h2>
+				<h2 class="lg:text-[64px] text-[32px] text-center text-[#1D2939] font-redhat">Carefully Picked Videos</h2>
 				<div class="text-center pb-4">
 				  <button class="mr-8 hover:border-b-2 border-[#FF601F] focus:border-b-2">Business</button>
 				  <button class="mr-8 hover:border-b-2 focus:border-b-2 border-[#FF601F]">Individual</button>
@@ -21,7 +22,7 @@ import VideoCard from  '../components/VideoCard.astro'
 			<VideoCard />
 			</section>
 			<div class="top-tab pt-12">
-			  <h2 class="text-[72px] mb-6 text-center w-full px-4 lg:w-[60%] mx-auto">Let us know how we can help you.</h2>
+			  <h2 class="lg:text-[72px] text-[32px] mb-6 text-center w-full px-4 lg:w-[60%] mx-auto font-semibold">Let us know how we can help you.</h2>
 			  <div class="text-center pb-4">
 				<button class="mr-8 hover:border-b-2 border-[#FF601F] focus:border-b-2">Business</button>
 				<button class="mr-8 hover:border-b-2 focus:border-b-2 border-[#FF601F]">Individual</button>
@@ -41,9 +42,8 @@ import VideoCard from  '../components/VideoCard.astro'
 				</form>
 			</section>
 			<section class="mt-8">
-			  <h2>FAQ</h2>
+			  <Faq />
 			</section>
-			</main>
 			
 			<style>
 			  .form-wrapper {

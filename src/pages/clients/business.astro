@@ -10,12 +10,14 @@ import icon from "/public/assets/caseStudyIcon.png";
 import Faq from "../../components/Faq.jsx";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="tifi: for Business">
   <main>
     <div
-      class="px-[176px] pt-[111px] pb-[138px] bg-gradient-to-t from-[#eaebf0] to-[#EAECF0] mx-[160px] rounded-[8px] flex flex-col items-center"
+      class="lg:px-[176px] md:px-[150px] px:[20px] pt-[85px] lg:pt-[111px] pb-[64px] lg:pb-[138px] bg-gradient-to-t from-[#eaebf0] to-white lg:mx-[160px] mt-[10px] rounded-[8px] flex flex-col items-center"
     >
-      <h1 class="font- text-[72px] font-black text-center text-[#101828]">
+      <h1
+        class="font-Red-Hat text-[32px] whitespace-nowrap md:text-[64px] lg:text-[72px] font-black text-center text-[#101828]"
+      >
         For
         <span class="text-[#FF601F]">Businesses</span>
       </h1>
@@ -30,8 +32,12 @@ import Faq from "../../components/Faq.jsx";
       </p>
     </div>
 
-    <div class="bg-[#eaebf0] py-[96px] px-[160px] my-[96px]">
-      <h1 class="font- text-[#101828] text-[64px] font-semibold">
+    <div
+      class="bg-[#eaebf0] py-[48px] lg:py-[96px] px-[12px] lg:px-[160px] my-[96px]"
+    >
+      <h1
+        class="font-Red-Hat text-[#101828] text-[30px] text-center md:text-[48px] lg:text-[64px] font-semibold"
+      >
         Our Palette of <span class="text-[#FF601F]">Corporate</span> Video
         Services
       </h1>
@@ -42,11 +48,13 @@ import Faq from "../../components/Faq.jsx";
         Unlocking the Power of Visual Storytelling for Your Business
       </p>
 
-      <div class="flex flex-row items-center gap-[31px]">
-        <div class="max-w-sm rounded-[8px] bg-white">
+      <div class="flex flex-col lg:flex-row items-center gap-[31px]">
+        <div class="max-w-sm md:max-w-[100%] rounded-[8px] bg-white">
           <img src="/assets/business-section-1.png" class="w-full" alt="..." />
           <div class="px-[16px] pt-[32px] pb-[24px] flex flex-col items-center">
-            <div class="font-bold text-[18px] font-noto-sans text-[#101828]">
+            <div
+              class="font-bold text-[18px] md:text-[25px] font-noto-sans text-[#101828]"
+            >
               Product <span class="text-[#FF601F]">Demonstrations</span>
             </div>
             <p
@@ -58,10 +66,12 @@ import Faq from "../../components/Faq.jsx";
           </div>
         </div>
 
-        <div class="max-w-sm rounded-[8px] bg-white">
+        <div class="max-w-sm md:max-w-[100%] rounded-[8px] bg-white">
           <img src="/assets/business-section-2.png" class="w-full" alt="..." />
           <div class="px-[16px] pt-[32px] pb-[24px] flex flex-col items-center">
-            <div class="font-bold text-[18px] font-noto-sans text-[#101828]">
+            <div
+              class="font-bold text-[18px] md:text-[25px] font-noto-sans text-[#101828]"
+            >
               Promotional<span class="text-[#FF601F]"> Videos</span>
             </div>
             <p
@@ -73,10 +83,12 @@ import Faq from "../../components/Faq.jsx";
           </div>
         </div>
 
-        <div class="max-w-sm rounded-[8px] bg-white">
+        <div class="max-w-sm md:max-w-[100%] rounded-[8px] bg-white">
           <img src="/assets/business-section-3.png" class="w-full" alt="..." />
           <div class="px-[16px] pt-[32px] pb-[24px] flex flex-col items-center">
-            <div class="font-bold text-[18px] font-noto-sans text-[#101828]">
+            <div
+              class="font-bold text-[18px] md:text-[25px] font-noto-sans text-[#101828]"
+            >
               Internal <span class="text-[#FF601F]">Communications</span>
             </div>
             <p
@@ -89,7 +101,9 @@ import Faq from "../../components/Faq.jsx";
         </div>
       </div>
 
-      <div class="px-[245px] flex flex-col items-center gap-[32px] mt-[56px]">
+      <div
+        class="px:[25px] lg:px-[245px] md:px-[100px] flex flex-col items-center gap-[32px] mt-[56px]"
+      >
         <p
           class="text-center text-[#344054] font-noto-sans text-[16px] font-normal leading-[25.6px]"
         >
@@ -119,13 +133,17 @@ import Faq from "../../components/Faq.jsx";
         WHAT WE CAN DO FOR YOU
       </p>
 
-      <h1 class="text-[#101828] text-center font- text-[64px] font-semibold">
+      <h1
+        class="text-[#101828] text-center font-Red-Hat text-[32px] md:text-[50px] lg:text-[64px] font-semibold"
+      >
         Custom Solutions for...
       </h1>
 
-      <div class="flex flex-row gap-[32px] items-center mt-[56px] mb-[96px]">
+      <div
+        class="flex flex-col lg:flex-row gap-[32px] items-center mt-[56px] mb-[96px]"
+      >
         <div
-          class="p-[32px] bg-[#eaebf0] flex flex-col items-start min-h-[400px] rounded-[16px] min-w-[500px]"
+          class="p-[32px] bg-[#eaebf0] flex flex-col items-start min-h-[400px] rounded-[16px] max-w-[350px] md:w-[100%] lg:min-w-[500px]"
         >
           <h1
             class="text-[#101828]
@@ -229,14 +247,14 @@ import Faq from "../../components/Faq.jsx";
           </div>
 
           <p
-            class="text-[#1D2939] font-noto-sans text-[16px] font-normal text-center"
+            class="text-[#1D2939] font-noto-sans text-[16px] font-normal text-start"
           >
             We're here to help you. Reach out to us as soon as possible!
           </p>
         </div>
 
         <div
-          class="p-[32px] bg-[#FCEDE7] flex flex-col items-start min-h-[400px] rounded-[16px] min-w-[500px]"
+          class="p-[32px] bg-[#FCEDE7] flex flex-col items-start min-h-[400px] rounded-[16px] max-w-[350px] md:w-[100%] lg:min-w-[500px]"
         >
           <h1
             class="text-[#101828]
@@ -347,8 +365,10 @@ import Faq from "../../components/Faq.jsx";
         <Image src={overlay} alt="overlay" width={474} />
       </div>
 
-      <div class="px-[160px]">
-        <h1 class="text-[#101828] text-center font- text-[64px] font-semibold">
+      <div class="px-[14px] lg:px-[160px]">
+        <h1
+          class="text-[#101828] text-center font-Red-Hat text-[32px] md:text-[50px] lg:text-[64px] font-semibold"
+        >
           Our Impact on Businesses
         </h1>
 
@@ -359,7 +379,7 @@ import Faq from "../../components/Faq.jsx";
         </p>
 
         <div
-          class="px-[100px] py-[24px] flex flex-row items-center justify-between bg-[#eaebf0] rounded-[24px]"
+          class="px-[16px] lg:px-[100px] py-[24px] flex flex-col lg:flex-row items-center justify-between bg-[#eaebf0] rounded-[24px]"
         >
           <div class="flex flex-col items-center gap-[8px]">
             <h1 class="text-[#101828] text-center font- text-[64px] font-bold">
@@ -390,7 +410,7 @@ import Faq from "../../components/Faq.jsx";
         </div>
 
         <p
-          class="px-[204px] text-[#344054] text-center font-noto-sans text-[16px] font-normal leading-[25.6px] pt-[48px] pb-[96px]"
+          class="px-[13px] lg:px-[204px] text-[#344054] text-center font-noto-sans text-[16px] font-normal leading-[25.6px] pt-[48px] pb-[96px]"
         >
           These figures reflect the tangible results we deliver to businesses
           across diverse sectors. Our video editing and storytelling expertise
@@ -399,8 +419,10 @@ import Faq from "../../components/Faq.jsx";
       </div>
     </div>
 
-    <div class="bg-[#eaebf0] py-[96px] px-[160px]">
-      <h1 class="text-[#101828] text-center font- text-[64px] font-semibold">
+    <div class="bg-[#eaebf0] py-[48px] lg:py-[96px] px-[23px] lg:px-[160px]">
+      <h1
+        class="text-[#101828] text-center font-Red-Hat text-[32px] md:text-[50px] lg:text-[64px] font-semibold"
+      >
         Case <span class="text-[#FF601F]">Studies</span>
       </h1>
 
@@ -410,7 +432,7 @@ import Faq from "../../components/Faq.jsx";
         Stories of transformation, engagement, and success.
       </p>
 
-      <div class="grid grid-cols-3 gap-[36px]">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[36px]">
         <div class="p-[30px] bg-white flex flex-col items-start rounded-[8px]">
           <Image src={icon} alt="icon" width={64} />
 
@@ -421,7 +443,7 @@ import Faq from "../../components/Faq.jsx";
           </h1>
 
           <p
-            class="text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
+            class="hidden md:block lg:block text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
           >
             The project garnered over 1 million views and sparked a 20% increase
             in travel bookings for our client
@@ -451,7 +473,7 @@ import Faq from "../../components/Faq.jsx";
           </h1>
 
           <p
-            class="text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
+            class="hidden lg:block md:block text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
           >
             The project garnered over 1 million views and sparked a 20% increase
             in travel bookings for our client
@@ -481,7 +503,7 @@ import Faq from "../../components/Faq.jsx";
           </h1>
 
           <p
-            class="text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
+            class="hidden lg:block md:block text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
           >
             The project garnered over 1 million views and sparked a 20% increase
             in travel bookings for our client
@@ -511,7 +533,7 @@ import Faq from "../../components/Faq.jsx";
           </h1>
 
           <p
-            class="text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
+            class="hidden lg:block md:block text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
           >
             The project garnered over 1 million views and sparked a 20% increase
             in travel bookings for our client
@@ -541,7 +563,7 @@ import Faq from "../../components/Faq.jsx";
           </h1>
 
           <p
-            class="text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
+            class="hidden lg:block md:block text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
           >
             The project garnered over 1 million views and sparked a 20% increase
             in travel bookings for our client
@@ -571,7 +593,7 @@ import Faq from "../../components/Faq.jsx";
           </h1>
 
           <p
-            class="text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
+            class="hidden lg:block md:block text-start text-[#344054] font-noto-sans text-[16px] leading-[25.6px] pb-[88px]"
           >
             The project garnered over 1 million views and sparked a 20% increase
             in travel bookings for our client
@@ -594,10 +616,10 @@ import Faq from "../../components/Faq.jsx";
     </div>
 
     <div
-      class="bg-[#585E69] py-[96px] px-[160px] flex flex-col items-start justify-center"
+      class="bg-[#585E69] py-[96px] px-[16px] lg:px-[160px] flex flex-col items-start justify-center"
     >
       <h1
-        class="text-white font- text-[64px] font-bold text-start max-w-[800px]"
+        class="text-white font-Red-Hat text-[32px] lg:text-[64px] font-bold text-start max-w-[800px]"
       >
         Elevating Your Brand's Identity
       </h1>
@@ -611,8 +633,8 @@ import Faq from "../../components/Faq.jsx";
         here to craft your unique narrative.
       </p>
 
-      <div class="flex flex-row items-center gap-[109px]">
-        <div class="w-[464px] h-[250px] bg-[#6C727B]"></div>
+      <div class="flex flex-col lg:flex-row items-center gap-[109px]">
+        <div class="w-[100%] lg:w-[464px] h-[250px] bg-[#6C727B]"></div>
 
         <p
           class="font-noto-sans text-[20px] font-medium leading-[32px] text-start text-white max-w-[619px]"
@@ -638,7 +660,7 @@ import Faq from "../../components/Faq.jsx";
       </div>
 
       <h1
-        class="text-[#101828] text-center font- text-[64px] font-bold pt-[96px]"
+        class="text-[#101828] text-center font-Red-hat text-[32px] lg:text-[64px] font-bold pt-[96px]"
       >
         Let's Create Something Together
       </h1>
@@ -652,8 +674,8 @@ import Faq from "../../components/Faq.jsx";
         happen.
       </p>
 
-      <form class="flex flex-col items-center gap-[24px] pt-[52px]">
-        <div class="flex flex-col items-start gap-[6px]">
+      <form class="flex flex-col items-center gap-[24px] pt-[52px] px-[20px]">
+        <div class="flex flex-col items-start gap-[6px] lg:w-auto w-[100%]">
           <label
             class="text-[#344054] font-jakarta-sans text-[14px] font-medium"
             >Company Name</label
@@ -663,11 +685,11 @@ import Faq from "../../components/Faq.jsx";
             name=""
             id=""
             placeholder="Enter business name"
-            class="px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[607px] rounded-[8px] outline-none"
+            class="px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[100%] lg:w-[607px] rounded-[8px] outline-none"
           />
         </div>
 
-        <div class="flex flex-col items-start gap-[6px]">
+        <div class="flex flex-col items-start gap-[6px] lg:w-auto w-[100%]">
           <label
             class="text-[#344054] font-jakarta-sans text-[14px] font-medium"
             >Email Address</label
@@ -677,11 +699,11 @@ import Faq from "../../components/Faq.jsx";
             name=""
             id=""
             placeholder="Enter email address"
-            class="px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[607px] rounded-[8px] outline-none"
+            class="px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[100%] lg:w-[607px] rounded-[8px] outline-none"
           />
         </div>
 
-        <div class="flex flex-col items-start gap-[6px]">
+        <div class="flex flex-col items-start gap-[6px] lg:w-auto w-[100%]">
           <label
             class="text-[#344054] font-jakarta-sans text-[14px] font-medium"
             >Subject(Optional)</label
@@ -691,11 +713,11 @@ import Faq from "../../components/Faq.jsx";
             name=""
             id=""
             placeholder="Enter subject"
-            class="px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[607px] rounded-[8px] outline-none"
+            class="px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[100%] lg:w-[607px] rounded-[8px] outline-none"
           />
         </div>
 
-        <div class="flex flex-col items-start gap-[6px]">
+        <div class="flex flex-col items-start gap-[6px] lg:w-auto w-[100%]">
           <label
             class="text-[#344054] font-jakarta-sans text-[14px] font-medium"
             >Tell us what we can do for you.</label
@@ -705,12 +727,12 @@ import Faq from "../../components/Faq.jsx";
             name=""
             id=""
             placeholder="Type your message..."
-            class="px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[607px] rounded-[8px] outline-none"
+            class="px-[14px] py-[16px] border-[1px] border-[#D0D5DD] w-[100%] lg:w-[607px] rounded-[8px] outline-none"
           ></textarea>
         </div>
 
         <button
-          class="font-inter text-white bg-[#FF601F] py-[12px] px-[20px] w-[607px] rounded-[8px]"
+          class="font-inter text-white bg-[#FF601F] py-[12px] px-[20px] w-[100%] lg:w-[607px] rounded-[8px]"
           >SEND MESSAGE</button
         >
       </form>
