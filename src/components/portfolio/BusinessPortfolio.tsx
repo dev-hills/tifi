@@ -2,7 +2,7 @@ import React from "react";
 
 const BusinessPortfolio: React.FC = () => {
   return (
-    <form class="flex flex-col lg:w-[40%] w-[100%] p-4 mx-auto py-16 font-jakarta-sans text-[14px] font-medium">
+    <form class="flex flex-col lg:w-[40%] md:w-[70%] w-[100%] p-4 mx-auto py-16 font-jakarta-sans text-[14px] font-medium">
       <label htmlFor="" class="mb-6">Company Name
         <input type="text" placeholder='Enter business name' class="block border rounded-[8px] p-2 w-[100%] mt-2"/></label>
         <label htmlFor="" class="mb-6">Email Address

@@ -7,15 +7,15 @@
   const cards = Array(numberOfCards).fill(cardData);
 ---
 
-<div class="flex justify-between items-center flex-wrap w-[80%] mx-auto my-12 flex-col lg:flex-row">
+<div class="flex justify-between items-center flex-wrap w-[80%] mx-auto my-12 flex-col lg:flex-row md:flex-row">
   {cards.map((post, index) => (
-    <div class="lg:h-[400px] h-[400px] lg:w-[32%] w-[100%] bg-gray-700 rounded-[8px] text-white mb-6 py-2  relative">
+    <div class="lg:h-[400px] h-[400px] lg:w-[32%] w-[100%] md:w-[46%] bg-gray-700 rounded-[8px] text-white mb-6 py-2  relative">
       <img class="w-full h-full blur-sm brightness-[75%]" src="https://img.freepik.com/free-photo/professional-programmer-working-late-dark-office_1098-18705.jpg?size=626&ext=jpg&ga=GA1.1.1207199826.1690666781&semt=ais" alt="" />
-      <img src="/assets/play.svg" alt="" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+      <img src="/src/image/play.svg" alt="" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
       <h3 class="text-white font-bold w-[70%] absolute bottom-6 left-4 font-noto-sans text-[24px]">{post.title}</h3>
     </div>
   ))}
-   <div class="lg:w-[32%] w-[100%] bg-[#101828] rounded-[8px] text-white mb-6 py-2 h-[400px] flex items-center justify-center flex-col text-center font-noto-sans font-black">
+   <div class="lg:w-[32%] w-[100%] md:w-[46%] bg-[#101828] rounded-[8px] text-white mb-6 py-2 h-[400px] flex items-center justify-center flex-col text-center font-noto-sans font-black">
    <h3 class="w-[80%] text-[24px]">This could be your project as a part of our amazing curation.</h3>
      <button class="bg-white rounded-md text-[#101828] p-4 mt-4">LET'S TALK &#8599;</button>
   </div>
