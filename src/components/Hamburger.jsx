@@ -12,7 +12,7 @@ export default function Hamburger() {
   }
   return (
     <div className="lg:hidden flex">
-    <button onClick={handleModal} className={`${open ? "hidden" : "flex"}`}>
+    <button onClick={handleModal} className={`${open ? "lg:hidden flex" : "hidden"}`}>
         <img src={hamburgerMenu} width={24} height={24} alt="menu icon"/>
       </button>
       
