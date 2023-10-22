@@ -1,23 +1,25 @@
 ---
 import { Image } from "astro:assets";
-import airbnb from "../../public/assets/airbnb.svg";
-import linear from "../../public/assets/linear.svg";
-import youtube from "../../public/assets/youtube.svg";
-import paypal from "../../public/assets/paypal.svg";
-import uber from "../../public/assets/uber.svg";
-import zoom from "../../public/assets/zoom.svg";
+import { 
+	Youtube,
+	Airbnb,
+	Linear,
+	Paypal,
+	Zoom,
+	Uber
+ } from "../../src/lib/images"
 ---
 
 <section
 	class='text-[#1D2939] bg-[#FF4D002B] opacity-95 w-full text-center lg:px-[160px] px-8 md:py-[54px] py-[80px] space-y-8'>
 	<p class='font-medium'>Join 4,000+ companies already growing</p>
 	<div
-		class='flex justify-evenly items-center gap-y-12 lg:gap-x-8 md:gap-x-[70px] gap-x-4 flex-wrap'>
-		<Image src={airbnb} width={128} height={48} alt='sponsors' />
-		<Image src={linear} width={148} height={48} alt='sponsors' />
-		<Image src={paypal} width={143} height={48} alt='sponsors' />
-		<Image src={youtube} width={132} height={48} alt='sponsors' />
-		<Image src={uber} width={72} height={48} alt='sponsors' />
-		<Image src={zoom} width={98} height={48} alt='sponsors' />
+		class='flex justify-evenly items-center gap-y-12 lg:gap-x-8 md:gap-x-[99px] gap-x-0 flex-wrap'>
+		<Image src={Airbnb} width={128} height={48} alt='sponsors' />
+		<Image src={Linear} width={148} height={48} alt='sponsors' />
+		<Image src={Paypal} width={143} height={48} alt='sponsors' />
+		<Image src={Youtube} width={132} height={48} alt='sponsors' />
+		<Image src={Uber} width={72} height={48} alt='sponsors' />
+		<Image src={Zoom} width={98} height={48} alt='sponsors' />
 	</div>
 </section>
