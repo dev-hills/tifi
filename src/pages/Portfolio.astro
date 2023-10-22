@@ -2,25 +2,25 @@
 import Layout from '../layouts/Layout.astro';
 import VideoCard from  '../components/portfolio/VideoCard.astro'
 import Faq from '../components/Faq'
-import VideoCardTab from '../components/portfolio/VideoCardTab.tsx'
+import VideoCardTab from '../components/portfolio/VideoCardTab.jsx'
 import ContactPortfolio from '../components/portfolio/ContactPortfolio.tsx'
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-			<div class="bg-gradient-to-b from-transparent to-[#EAECF0] lg:w-[90%] w-[100%] mx-auto h-[40vh] flex items-center justify-center flex-col rounded-b-xl text-center font-red-hat p-4">
+			<div class="bg-gradient-to-b from-transparent to-[#EAECF0] lg:w-[80%] w-[100%] mx-auto h-[40vh] flex items-center justify-center flex-col rounded-b-xl text-center font-red-hat p-4">
 				<h1 class="lg:text-[72px] text-[32px] mt-0 font-bold my-2"><span class="text-[#FF601F]">Featured</span>  Works</h1>
 				<p class="text-[16px] w-[100%] lg:w-[50%] font-noto-sans">We don't just edit videos; we choreograph stories that resonate, inspire, and leave a lasting impression. Browse through our award-winning work and find concepts that move you.</p>
 			</div>
 			<section class="bg-[#101828] bg-opacity-[17%] mt-8 py-16">
-				<h2 class="lg:text-[64px] text-[32px] text-center text-[#1D2939] font-redhat">Carefully Picked Videos</h2>
+				<h2 class="lg:text-[64px] text-[32px] text-center text-[#1D2939] font-red-hat">Carefully Picked Videos</h2>
 				<div class="text-center pb-4">			
 				 <VideoCardTab client:load />
 				</div>
 				<VideoCard />
 			</section>
 			<div class="top-tab pt-12">	
-			<section class="form-wrapper border-b border-t">
+			<section class="form-wrapper border-b">
 			<ContactPortfolio client:load  />	
 			</section>	
 			</div>	

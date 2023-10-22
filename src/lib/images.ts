@@ -10,3 +10,4 @@ export { default as Happy } from "../../public/assets/happy.svg";
 export { default as Art } from "../../public/assets/art.svg";
 export { default as Techniques } from "../../public/assets/techniques.svg";
 export { default as Grading } from "../../public/assets/grading.svg";
+export { default as playicon } from "../../public/assets/play.svg";
