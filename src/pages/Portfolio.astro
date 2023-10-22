@@ -1,48 +1,31 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import VideoCard from  '../components/VideoCard.astro'
+import VideoCard from  '../components/portfolio/VideoCard.astro'
 import Faq from '../components/Faq'
+import VideoCardTab from '../components/portfolio/VideoCardTab.tsx'
+import ContactPortfolio from '../components/portfolio/ContactPortfolio.tsx'
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 			<div class="bg-gradient-to-b from-transparent to-[#EAECF0] lg:w-[90%] w-[100%] mx-auto h-[40vh] flex items-center justify-center flex-col rounded-b-xl text-center font-red-hat p-4">
 				<h1 class="lg:text-[72px] text-[32px] mt-0 font-bold my-2"><span class="text-[#FF601F]">Featured</span>  Works</h1>
-				<p class="text-[16px] w-[100%] lg:w-[60%]">We don't just edit videos; we choreograph stories that resonate, inspire, and leave a lasting impression. Browse through our award-winning work and find concepts that move you.</p>
+				<p class="text-[16px] w-[100%] lg:w-[50%] font-noto-sans">We don't just edit videos; we choreograph stories that resonate, inspire, and leave a lasting impression. Browse through our award-winning work and find concepts that move you.</p>
 			</div>
 			<section class="bg-[#101828] bg-opacity-[17%] mt-8 py-16">
 				<h2 class="lg:text-[64px] text-[32px] text-center text-[#1D2939] font-redhat">Carefully Picked Videos</h2>
-				<div class="text-center pb-4">
-				  <button class="mr-8 hover:border-b-2 border-[#FF601F] focus:border-b-2">Business</button>
-				  <button class="mr-8 hover:border-b-2 focus:border-b-2 border-[#FF601F]">Individual</button>
-				  <select name="" id="">
-					<option value="short film">Short Film</option>
-				</select>
+				<div class="text-center pb-4">			
+				 <VideoCardTab client:load />
 				</div>
-			<VideoCard />
+				<VideoCard />
 			</section>
-			<div class="top-tab pt-12">
-			  <h2 class="lg:text-[72px] text-[32px] mb-6 text-center w-full px-4 lg:w-[60%] mx-auto font-semibold">Let us know how we can help you.</h2>
-			  <div class="text-center pb-4">
-				<button class="mr-8 hover:border-b-2 border-[#FF601F] focus:border-b-2">Business</button>
-				<button class="mr-8 hover:border-b-2 focus:border-b-2 border-[#FF601F]">Individual</button>
-			  </div>
-			
-			</div>
+			<div class="top-tab pt-12">	
 			<section class="form-wrapper border-b border-t">
-				<form class="flex flex-col lg:w-[40%] w-[100%] p-4 mx-auto py-16">
-				  <label htmlFor="" class="mb-6">Company Name
-					<input type="text" placeholder='Enter business name' class="block border rounded-[8px] p-2 w-[100%] mt-2"/></label>
-					<label htmlFor="" class="mb-6">Email Address
-					<input type="text" placeholder='Enter email address' class="block border rounded-[8px] p-2 w-[100%] mt-2" /></label>
-					<label htmlFor="" class="mb-6">Subject (optional)
-					<input type="text" placeholder='Enter subject' class="block border rounded-[8px] p-2 w-[100%] mt-2"/></label>
-					<label htmlFor="" class="mb-6">Tell us what we can do for you <textarea name="" id="" cols="30" rows="10" placeholder='Type your message' class="block border rounded-[8px] p-2 w-[100%] mt-2"/></label>
-					<button class="bg-[#FF601F] text-white rounded-[8px] p-2 uppercase">Send Message</button>
-				</form>
-			</section>
+			<ContactPortfolio client:load  />	
+			</section>	
+			</div>	
 			<section class="mt-8">
-			  <Faq />
+			  <Faq client:load />
 			</section>
 			
 			<style>
