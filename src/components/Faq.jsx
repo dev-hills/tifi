@@ -53,7 +53,7 @@ const Faq = () => {
 
   return (
     <div className="lg:px-[160px] md:px-10 px-6 py-[96px]">
-      <h1 className="text-center text-[#1D2939] font-Red-Hat lg:text-[64px] md:text-[32px] text-[32px] font-semibold pb-[48px]">
+      <h1 className="text-center text-[#1D2939] font-Red-Hat lg:text-[64px] md:text-[48px] text-[32px] font-semibold pb-[48px]">
         FAQ
       </h1>
 
@@ -68,8 +68,8 @@ const Faq = () => {
                 onClick={() => toggleMenu(menu.title)}
                 className={
                   openMenu === menu.title
-                    ? "text-[30px] bg-[#FF601F] w-[42px] h-[42px] flex items-center justify-center rounded-[8px] text-white"
-                    : "text-[30px] bg-[#EAECF0] w-[42px] h-[42px] flex items-center justify-center rounded-[8px] text-[#101828]"
+                    ? "text-[22px] bg-[#FF601F] w-[42px] h-[42px] flex items-center justify-center rounded-[8px] text-white"
+                    : "text-[22px] bg-[#EAECF0] w-[42px] h-[42px] flex items-center justify-center rounded-[8px] text-[#101828]"
                 }
               >
                 {openMenu === menu.title ? "-" : "+"}
