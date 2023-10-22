@@ -1,8 +1,5 @@
 ---
   const numberOfCards = 5;
-  // import { Image } from 'astro:assets';
-  const playimage = '/public/assets/play.svg'; 
-
   const cardData = {
     title: 'A Day in the life of a Software Developer',
   };
@@ -12,21 +9,26 @@
 
 <div class="flex justify-between items-center flex-wrap w-[80%] mx-auto my-12 flex-col lg:flex-row">
   {cards.map((post, index) => (
-    <div class="lg:h-[400px] h-auto lg:w-[32%] w-[100%] bg-[#101828] rounded-[8px] bg-blend-overlay text-white mb-6 py-2">
-      <div class="w-[100%] bg-[#101828] relative ">
-        <iframe width="100%" height="340" src="https://www.youtube.com/embed/vrG7OGT4-q4?si=gKNRYB9SVZ1HYNYx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><div class="overlay"></div>
+    <div class="lg:h-[400px] h-[400px] lg:w-[32%] w-[100%] bg-gray-700 rounded-[8px] text-white mb-6 py-2  relative">
+      <img class="w-full h-full blur-sm brightness-[75%]" src="https://img.freepik.com/free-photo/professional-programmer-working-late-dark-office_1098-18705.jpg?size=626&ext=jpg&ga=GA1.1.1207199826.1690666781&semt=ais" alt="" />
       <img src="/src/image/play.svg" alt="" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
-        </div>
-      <h3 class="text-res-102 font-bold py-2 text-center">{post.title}</h3>
+      <h3 class="text-white font-bold w-[70%] absolute bottom-6 left-4 font-noto-sans text-[24px]">{post.title}</h3>
     </div>
   ))}
-   <div class="lg:w-[32%] w-[100%] bg-[#101828] rounded-[8px] text-white mb-6 py-2 h-[400px] flex items-center justify-center flex-col text-center">
+   <div class="lg:w-[32%] w-[100%] bg-[#101828] rounded-[8px] text-white mb-6 py-2 h-[400px] flex items-center justify-center flex-col text-center font-noto-sans font-black">
    <h3 class="w-[80%] text-[24px]">This could be your project as a part of our amazing curation.</h3>
      <button class="bg-white rounded-md text-[#101828] p-4 mt-4">LET'S TALK &#8599;</button>
   </div>
 </div>
 
 <style>
+  .video-img {
+    background-image:url('/public/assets/se.jpg');
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(2px); */
+  }
+
   .overlay {
   position: absolute;
   top: 0;
