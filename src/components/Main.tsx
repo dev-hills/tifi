@@ -520,7 +520,7 @@ const Main = () => {
         </p>
       </section>
 
-      <section className="bg-[url('/public/assets/curated-bg.png')] p-4 lg:p-20 py-[400px] bg-no-repeat text-center">
+      <section className="bg-[url('/public/assets/curated-bg.png')] p-4 lg:p-20 py-[400px] mb-0 bg-no-repeat text-center">
         <p className="text-white text-[3rem] lg:text-[6rem] font-extrabold">
           The Tech Guy
         </p>
@@ -533,7 +533,7 @@ const Main = () => {
         </button>
       </section>
 
-      <section className="bg-[#45431f] p-4 lg:p-20 py-[100px] text-center">
+      <section className="bg-[#45431f] mt-0 p-4 lg:p-20 py-[100px] text-center">
         <p className="text-white text-[3rem] lg:text-[6rem] font-extrabold">
           We Are The Pulse
         </p>
