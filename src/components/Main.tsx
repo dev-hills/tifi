@@ -1,5 +1,5 @@
 import React from 'react';
-// import Sponsors from './Sponsors.astro';
+import Faq from './Faq';
 import {
   Youtube,
   Airbnb,
@@ -749,6 +749,8 @@ const Main = () => {
 </section>
 
       </section>
+
+      <Faq />
     </main>
   );
 }
