@@ -29,6 +29,7 @@ import Strategy from "../../public/assets/strategic.svg";
 import Talent from "../../public/assets/talent.svg";
 import Timely from "../../public/assets/timely.svg";
 import "../styles.css"
+import Contact from './Contact';
 
 interface Props {
   src: string;
@@ -305,8 +306,7 @@ const Main = () => {
             <img src={craftSrc} alt="..." className="py-5 lg:py-0" />
           </div>
         </div>
-
-        <button className="flex mt-16 my-8 border border-black py-1 px-4 text-[10px] font-bold m-auto items-center">
+<a href='/Portfolio'>        <button className="flex mt-16 my-8 border border-black py-1 px-4 text-[10px] font-bold m-auto items-center">
           VIEW RECENT WORKS
           <svg
             width="20"
@@ -325,7 +325,10 @@ const Main = () => {
             />
           </svg>
         </button>
+        </a>
+
       </section>
+
 
       <section className="bg-[#101828] p-20 py-[100px] font-extrabold lg:px-[400px]">
         <p className="wetext text-2xl sm:text-5xl leading-[35px] text-black/40">
@@ -386,7 +389,7 @@ const Main = () => {
             <p className="text-[12px]">
               We're here to help you. Reach out to us as soon as possible.
             </p>
-
+<a href='/clients/business'>
             <button className="flex items-center mt-8 border border-black py-1 px-4 text-[10px] font-bold">
               SEE BUSINESSES
               <svg
@@ -406,6 +409,7 @@ const Main = () => {
                 />
               </svg>
             </button>
+            </a>
           </div>
           <div className="bg-[rgba(255,96,31,0.10)]  rounded-xl py-8 px-5 mx-4 w-full sm:w-[400px] lg:w-[400px] ">
             <p className="font-extrabold text-2xl">Individuals</p>
@@ -444,7 +448,7 @@ const Main = () => {
               <img src={tickCircleSrc} alt="..." />
               <span className="pl-3 pt-1 text-[12px]">And many more</span>
             </p>
-
+<a href='/clients/individuals'></a>
             <button className="flex items-center mt-8 border border-black py-1 px-4 text-[10px] font-bold">
               SEE INDIVIDUALS
               <svg
