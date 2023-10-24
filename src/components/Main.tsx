@@ -77,17 +77,16 @@ const Main = () => {
               </span>{" "}
               Imagination
             </h1>
-            <p className="text-[12px] w-[300px] sm:w-[400px] leading-8 md:w-auto px-4 m-auto py-10">
+            <p className="text-[14px] w-[300px] sm:w-[400px] leading-8 md:w-auto px-4 m-auto py-10">
               Elevate your brand, Experience the power of storytelling through
               the lens of creativity and innovation.
             </p>
-            <a href='/contact'>
-                          <button className="bg-[#FF601F] tracking-wider font-bold text-[12px] text-white p-3 px-6 rounded hover:transform hover:scale-105 hover:duration-700 flex m-auto">
-              LET'S TALK
-              <img src={pointerSrc} alt="Pointer" className="w-[27px] pl-2" />
-            </button>
+            <a href="/contact">
+              <button className="bg-[#FF601F] tracking-wider font-bold text-[12px] text-white p-3 px-6 rounded hover:transform hover:scale-105 hover:duration-700 flex m-auto">
+                LET'S TALK
+                <img src={pointerSrc} alt="Pointer" className="w-[27px] pl-2" />
+              </button>
             </a>
-
           </div>
         </div>
       </section>
@@ -105,7 +104,7 @@ const Main = () => {
           <img src={zoomSrc} alt="Zoom Icon" />
         </div>
       </section>
-      
+
       <section className="bg-[#101828] p-20 py-[100px] text-center font-extrabold">
         <p className="wetext text-2xl sm:text-5xl leading-[35px] text-black/40">
           WE ARE MORE THAN
@@ -391,7 +390,7 @@ const Main = () => {
             </p>
 <a href='/clients/business'>
             <button className="flex items-center mt-8 border border-black py-1 px-4 text-[10px] font-bold">
-              SEE BUSINESSES
+              <a href="/clients/business">SEE BUSINESSES</a>
               <svg
                 width="20"
                 height="24"
@@ -450,7 +449,7 @@ const Main = () => {
             </p>
 <a href='/clients/individuals'></a>
             <button className="flex items-center mt-8 border border-black py-1 px-4 text-[10px] font-bold">
-              SEE INDIVIDUALS
+              <a href="/clients/individuals"> SEE INDIVIDUALS</a>
               <svg
                 width="20"
                 height="24"
@@ -524,7 +523,7 @@ const Main = () => {
         </p>
       </section>
 
-      <section className="bg-[url('/public/assets/curated-bg.png')] p-4 lg:p-20 py-[400px] mb-0 bg-no-repeat text-center">
+      <section className="bg-[url('/public/assets/curated-bg.png')] p-4 lg:p-20 pt-[400px] pb-[200px] mb-0 bg-no-repeat text-center">
         <p className="text-white text-[3rem] lg:text-[6rem] font-extrabold">
           The Tech Guy
         </p>
@@ -725,36 +724,74 @@ const Main = () => {
         </p>
 
         <section className="explore-section flex flex-col items-center gap-9 py-24 md:px-10">
-  <div className="explore-cards max-w-[18.75rem] md:max-w-[46.875rem] xl:max-w-[58.4375rem] flex flex-col md:flex-row items-center gap-8 md:gap-10">
-    <div className="explore-card flex flex-col h-[26.625rem] w-[18.625rem] border border-white rounded-xl overflow-hidden transition-transform duration-300 ease-in-out transform hover:scale-105 bg-[#101828]">
-      <img src={artSrc} alt="Blog 1" className="object-cover h-[17.3125rem]"/>
-      <div className="details-container flex flex-col p-2 md:p-4">
-        <p className="details text-xs text-gray-600 pb-4">October 12, 2023 | 8 mins | <span className="text-[#ff601f]">Storytelling</span></p>
-        <h3 className="text-base md:text-lg font-bold text-white">The Art of Storytelling Through Video</h3>
-        <p className="text-xs md:text-sm text-gray-600">Discover how storytelling isn't just a technique but the heart of compelling video content. Learn how connecting with your audience's emotions can leave a lasting impact on them.</p>
-      </div>
-    </div>
+          <div className="explore-cards max-w-[18.75rem] md:max-w-[46.875rem] xl:max-w-[58.4375rem] flex flex-col md:flex-row items-center gap-8 md:gap-10">
+            <div className="explore-card flex flex-col h-[26.625rem] w-[18.625rem] border border-white rounded-xl overflow-hidden transition-transform duration-300 ease-in-out transform hover:scale-105 bg-[#101828]">
+              <img
+                src={artSrc}
+                alt="Blog 1"
+                className="object-cover h-[17.3125rem]"
+              />
+              <div className="details-container flex flex-col p-2 md:p-4">
+                <p className="details text-xs text-gray-600 pb-4">
+                  October 12, 2023 | 8 mins |{" "}
+                  <span className="text-[#ff601f]">Storytelling</span>
+                </p>
+                <h3 className="text-base md:text-lg font-bold text-white">
+                  The Art of Storytelling Through Video
+                </h3>
+                <p className="text-xs md:text-sm text-gray-600">
+                  Discover how storytelling isn't just a technique but the heart
+                  of compelling video content. Learn how connecting with your
+                  audience's emotions can leave a lasting impact on them.
+                </p>
+              </div>
+            </div>
 
-    <div className="explore-card flex flex-col h-[26.625rem] w-[18.625rem] border border-white rounded-xl overflow-hidden transition-transform duration-300 ease-in-out transform hover:scale-105 bg-[#101828]">
-      <img src={techniquesSrc} alt="Blog 2" className="object-cover h-[17.3125rem]"/>
-      <div className="details-container flex flex-col p-2 md:p-4">
-        <p className="details text-xs text-gray-600 pb-4">October 12, 2023 | 8 mins | <span className="text-[#ff601f]">Tools</span></p>
-        <h3 className="text-base md:text-lg font-bold text-white">7 Essential Video Editing Techniques</h3>
-        <p className="desc lg:hidden text-xs md:text-sm text-gray-600">Discover how storytelling isn't just a technique but the heart of compelling video content. Learn how connecting with your audience's emotions can leave a lasting impact on them.</p>
-      </div>
-    </div>
+            <div className="explore-card flex flex-col h-[26.625rem] w-[18.625rem] border border-white rounded-xl overflow-hidden transition-transform duration-300 ease-in-out transform hover:scale-105 bg-[#101828]">
+              <img
+                src={techniquesSrc}
+                alt="Blog 2"
+                className="object-cover h-[17.3125rem]"
+              />
+              <div className="details-container flex flex-col p-2 md:p-4">
+                <p className="details text-xs text-gray-600 pb-4">
+                  October 12, 2023 | 8 mins |{" "}
+                  <span className="text-[#ff601f]">Tools</span>
+                </p>
+                <h3 className="text-base md:text-lg font-bold text-white">
+                  7 Essential Video Editing Techniques
+                </h3>
+                <p className="desc lg:hidden text-xs md:text-sm text-gray-600">
+                  Discover how storytelling isn't just a technique but the heart
+                  of compelling video content. Learn how connecting with your
+                  audience's emotions can leave a lasting impact on them.
+                </p>
+              </div>
+            </div>
 
-    <div className="explore-card flex flex-col h-[26.625rem] w-[18.625rem] border border-white rounded-xl overflow-hidden transition-transform duration-300 ease-in-out transform hover:scale-105 bg-[#101828]">
-      <img src={gradingSrc} alt="Blog 3" className="object-cover h-[17.3125rem]"/>
-      <div className="details-container flex flex-col p-2 md:p-4">
-        <p className="details text-xs text-gray-600 pb-4">October 12, 2023 | 8 mins | <span className="text-[#ff601f]">Travel</span></p>
-        <h3 className="text-base md:text-lg font-bold text-white">The Impact of Color Grading in Video Editing</h3>
-        <p className="desc lg:hidden text-xs md:text-sm text-gray-600">Discover how storytelling isn't just a technique but the heart of compelling video content. Learn how connecting with your audience's emotions can leave a lasting impact on them.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+            <div className="explore-card flex flex-col h-[26.625rem] w-[18.625rem] border border-white rounded-xl overflow-hidden transition-transform duration-300 ease-in-out transform hover:scale-105 bg-[#101828]">
+              <img
+                src={gradingSrc}
+                alt="Blog 3"
+                className="object-cover h-[17.3125rem]"
+              />
+              <div className="details-container flex flex-col p-2 md:p-4">
+                <p className="details text-xs text-gray-600 pb-4">
+                  October 12, 2023 | 8 mins |{" "}
+                  <span className="text-[#ff601f]">Travel</span>
+                </p>
+                <h3 className="text-base md:text-lg font-bold text-white">
+                  The Impact of Color Grading in Video Editing
+                </h3>
+                <p className="desc lg:hidden text-xs md:text-sm text-gray-600">
+                  Discover how storytelling isn't just a technique but the heart
+                  of compelling video content. Learn how connecting with your
+                  audience's emotions can leave a lasting impact on them.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
 
       <Faq />
