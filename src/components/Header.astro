@@ -22,12 +22,12 @@ import ArrowDown from "../../public/assets/arrow-down.svg"
         </span>
         <div id="newlist" class="lg:flex lg:flex-row lg:items-start lg:justify-between lg:mt-0 mt-9 z-4 lg:z-auto lg:static absolute 
         bg-white w-full left-0 lg:w-auto py-6 lg:py-0 pl-4 lg:pl-0 flex flex-col items-center
-        lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        lg:opacity-100 opacity-0 text-center lg:text-normal top-[-400px] transition-all ease-in duration-500">
         <ul class="lg:flex pt-4">
             <li class="cursor-pointer"><a href="/">About Us</a></li></li>
-            <li class="lg:px-5 cursor-pointer py-3 lg:py-0"><a href="/Portfolio">Portfolio</a></li></li>
-            <li class="flex pr-5 cursor-pointer">
-                <a href="/clients/business">Clients</a>
+            <li class="lg:px-5 cursor-pointer py-4 lg:py-0"><a href="/Portfolio">Portfolio</a></li></li>
+            <li class="flex lg:pr-3 pl-3 lg:pl-0 cursor-pointer relative" id="clientClick">
+                Clients
             <Image 
             src={ArrowDown}
             width={20}
@@ -35,11 +35,19 @@ import ArrowDown from "../../public/assets/arrow-down.svg"
             alt={`Arrow-down`}
             class="pb-1 pl-1"
             />
+            <div id="dropdownDisplay" class="rounded hidden border-gray-500 bg-white p-8 absolute top-[40px] shadow-md w-[200px]">
+                <p>
+                <a href="/clients/business">
+                    Individual </a>
+                </p>
+                <p>
+                    <a href="/clients/individuals">Businesses</a></p>
+            </div>
             </li>
-            <li class="cursor-pointer py-3 lg:py-0"><a href="/resources">Resources</a></li></li>
+            <li class="cursor-pointer py-4 lg:py-0"><a href="/resources">Resources</a></li></li>
         </ul>
 
-            <a href="/contact"><button class="bg-[#FF601F] lg:ml-[100px] text-white py-3 px-5 rounded-lg hover:transform hover:scale-105 hover:duration-700 lg:flex font-bold mr-2">
+            <a href="/contact"><button class="bg-[#FF601F] hidden lg:ml-[100px] text-white py-3 px-5 rounded-lg hover:transform hover:scale-105 hover:duration-700 lg:flex font-bold mr-2">
                 LET'S TALK
             </button></a>
 </div>
@@ -52,6 +60,9 @@ import ArrowDown from "../../public/assets/arrow-down.svg"
     var menu: any = document.querySelector("#menu");
     var close: any = document.querySelector("#close");
     let list: any = document.querySelector("#newlist");
+    const clientClick = document.querySelector("#clientClick");
+    const dropdownDisplay = document.querySelector("#dropdownDisplay");
+
     menu.addEventListener("click", function() {
         close.style.display = "block";
         menu.style.display = "none";
@@ -64,5 +75,10 @@ import ArrowDown from "../../public/assets/arrow-down.svg"
         close.style.display = "none";
         list.style.top = "0"
         list.style.opacity = '0'
+        // dropdownDisplay?.classList.add("hidden");
+    });
+
+    clientClick?.addEventListener("click", function() {
+        dropdownDisplay?.classList.toggle("hidden");
     });
 </script>
